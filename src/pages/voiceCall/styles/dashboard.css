@@ -1,0 +1,105 @@
+.card-one {
+ 
+
+    border: 1px solid transparent;
+    background: linear-gradient(123.08deg, rgba(58, 129, 191, 0.6) 6.2%, rgba(65, 48, 90, 0.6) 93.68%),
+    linear-gradient(124.82deg, #9747FF 7.9%, rgba(155, 111, 238, 0) 42.81%, rgba(123, 127, 234, 0) 55.19%, #02A9F7 93.26%) padding-box,
+    linear-gradient(10deg, transparent 0%,#058dcd ,#783bc9) border-box;
+  
+    width: 50vw;
+    height: 150px;
+    border-radius: 15px;
+    margin: 20px;
+
+  
+
+}
+.card-two {
+   width: 40vw;
+    height: 150px;
+    border-radius: 25px;
+    margin: 20px;
+    border: 1px solid transparent;
+    background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(-120deg, transparent 0%,#058dcd ,#783bc9) border-box;
+
+}
+.second-card{
+  width: 90vw;
+  margin:  20px ;
+  /* border: 1px solid blue; */
+  /* padding: 100px 30px; */
+  height: 200px;
+  transition: transform 0.1s ease;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(-120deg, transparent 0%,#058dcd ,#783bc9) border-box;
+}
+
+.second-card-sub-one{
+  width: 30vw;
+  margin:  5px ;
+  /* border: 1px solid blue; */
+  /* padding: 100px 30px; */
+  height: 110px;
+  transition: transform 0.1s ease;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(-120deg, transparent 0%,#058dcd ,#783bc9) border-box;
+}
+.second-card-sub-two{
+  width: 30vw;
+  margin:  5px ;
+  /* border: 1px solid blue; */
+  /* padding: 100px 30px; */
+  height: 110px;
+  transition: transform 0.1s ease;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(-120deg, transparent 0%,#058dcd ,#783bc9) border-box;
+}
+.second-card-sub-three{
+  width: 30vw;
+  margin:  5px ;
+  /* border: 1px solid blue; */
+  /* padding: 100px 30px; */
+  height: 110px;
+  transition: transform 0.1s ease;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(-120deg, transparent 0%,#058dcd ,#783bc9) border-box;
+}
+.third-card-sub1{
+  width: 90vw;
+  margin:  10px 10px 0px 20px ;
+  /* border: 1px solid blue; */
+  /* padding: 100px 30px; */
+  height: 220px;
+  transition: transform 0.1s ease;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(-120deg, transparent 0%,#058dcd ,#783bc9) border-box;
+}
+.third-card-sub2{
+  width: 90vw;
+  margin:  10px 20px 10px 20px ;
+  /* border: 1px solid blue; */
+  /* padding: 100px 30px; */
+  height: 220px;
+  transition: transform 0.1s ease;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(-120deg, transparent 0%,#058dcd ,#783bc9) border-box;
+}

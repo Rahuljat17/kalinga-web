@@ -1,0 +1,168 @@
+.main-container {
+  height: 100vh;
+  /* Full viewport height */
+  background-image: url('../../Group\ 3156.png') !important;
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* padding: 50px 100px 100px 130px; */
+
+  /* Centers the image */
+
+}
+.formContainer{
+  margin-left: 140px !important;
+}
+
+.loginbg{
+  width: 40vw;
+  height: 100vh;
+  overflow: hidden;
+  img{
+    width: 100%;
+}
+
+}
+
+.head {
+  text-align: center;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.9);
+  /* Slightly transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  margin-left: 50px;
+  margin: 0px 0px 0px 150px;
+  /* Adjust the left margin as needed */
+}
+.cntr{
+  width: 51vw;
+  display: flex;
+  justify-content: center;
+}
+
+.cntr2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  /* width: 375px; */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formContainer input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e8c6ff;
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  margin-left: 230px !important;
+  color: #0066cc;
+  text-decoration: none;
+
+}
+
+.submit-card {
+  margin-top: 10px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1050px) {
+  .main-container {
+      justify-content: center;
+      padding: 20px;
+      background-image: none;
+      background: linear-gradient(180deg, #4cbdff 0%, #656565 100%) !important;
+  }
+
+  .login-card {
+      margin: 0;
+      width: 100%;
+      max-width: 400px;
+  }
+
+  .input-group {
+      width: 100%;
+  }
+
+  .loginbg{
+    display: none;
+  }
+  
+  .formContainer{
+    margin-left: 0px !important;
+  }
+}
+
+/* Animations */
+
+.auth-animation {
+  /* Initial styles for the element */
+  position: relative;
+  animation: slide-in 0.2s ease-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

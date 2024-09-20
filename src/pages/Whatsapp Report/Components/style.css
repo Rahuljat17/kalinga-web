@@ -1,0 +1,112 @@
+.cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.5em 0.8em 1.2em !important;
+    color: rgb(255, 255, 255) !important;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgb(18, 7, 38) 0%, rgb(0, 0, 0) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em rgb(0, 0, 0);
+    letter-spacing: 0.05em;
+    border-radius: 10px !important; 
+    margin-bottom: 10px;
+
+  }
+a{
+  text-decoration: none;
+  
+}
+  .cennnnn{
+    max-width: 400px !important;
+    padding: 10px;
+    overflow: scroll;
+ height: 40px;
+
+  }
+  
+  .cssbuttons-io-button svg {
+    margin-right: 8px;
+  }
+  
+  .cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em rgb(240, 238, 242);
+  }
+  
+  .cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em rgb(160, 109, 255);
+  }
+  .dropzone-container {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  option {
+    background-color: rgb(106, 62, 145);
+  }
+.bussinesswp {
+  width: auto;
+  padding: 0px 15px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bussinesswp:hover {
+  background-color: #e8c6ff;
+}
+  
+  /* Animations */
+
+  .qr-animation {
+    animation: popup-animation 0.7s ease-in-out forwards;
+  }
+  @keyframes popup-animation {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    70% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .drawer2-animation{
+    animation: slide-animation 0.4s ease-in-out forwards;
+  }
+  @keyframes slide-animation {
+    0% {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .sub-exp-animation {
+    animation: slide-right-animation 1s ease-in-out forwards;
+  }
+  @keyframes slide-right-animation {
+    0% {
+      transform: translateX(40px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
