@@ -22,6 +22,10 @@ export const all_admin_option = [
   // { id: 2, name: "Drafts", icon:<img src={Drafts} style={{height:"20px",width:"20px"}}/>, link: "/drafts" },
   // { id: 3, name: "Account Manager", icon:<img src={Account_Manager} style={{height:"20px",width:"20px"}}/>, link: "/account_manager" },
   // { id: 4, name: "File Manager", icon:<img src={File_Manager} style={{height:"20px",width:"20px"}}/>, link: "/file_manager" },
+
+
+
+  
 ];
 export const all_whatsapp_option = [
   {
