@@ -8,7 +8,7 @@ import logo from '../../../src/Accets/icon.png';
 import Snackbar from "../../common/snackbar/components/snackbar";
 import LoaderCon from "../../common/loader/containers/loader_cont";
 import { Navigate } from "react-router-dom";
-import "./login.css";
+// import "./login.css";
 import { Link } from "react-router-dom";
 import UNIVERSAL from "../../config/config";
 import { setLoader, unsetLoader } from "../../common/loader/action";

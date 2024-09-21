@@ -6,9 +6,9 @@ import storage from "redux-persist/lib/storage";
 import login from "./auth/reducer";
 import snackbar from "./common/snackbar/reducer";
 import loader from "./common/loader/reducer";
-import campaign from "./pages/Campaign Details/reducer";
-import ncampaign from "./pages/WhatsappClient/reducer";
-import dashboard from "./pages/Dashboard/reducer";
+// import campaign from "./pages/Campaign Details/reducer";
+// import ncampaign from "./pages/WhatsappClient/reducer";
+// import dashboard from "./pages/Dashboard/reducer";
 import signup from '../src/auth/reducer';
 // import dashboard from '../src/pages/Dashboard/reducer'
 const persistConfig = {
@@ -25,9 +25,9 @@ const reducer = combineReducers({
   snackbar,
   loader,
   login,
-  dashboard,
-  campaign,
-  ncampaign,
+  // dashboard,
+  // campaign,
+  // ncampaign,
   signup,
 });
 

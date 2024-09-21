@@ -12,7 +12,7 @@ import styled from 'styled-components';
 import Snackbar from "../../common/snackbar/components/snackbar";
 import LoaderCon from "../../common/loader/containers/loader_cont";
 import logo from '../../../src/Accets/alpatechlogo.png';
-import "./login.css";
+// import "./login.css";
 import Modal from '@material-ui/core/Modal'; // Assuming you are using Material-UI for the modal
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
 

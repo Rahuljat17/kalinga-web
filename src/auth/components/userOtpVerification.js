@@ -13,7 +13,7 @@ import Snackbar from "../../common/snackbar/components/snackbar";
 import LoaderCon from "../../common/loader/containers/loader_cont";
 import { Navigate } from "react-router-dom";
 import logo from '../../../src/Accets/alpatechlogo.png';
-import "./login.css";
+// import "./login.css";
 import styled from 'styled-components';
 
 class Login extends Component {
