@@ -111,16 +111,18 @@
   justify-content: space-evenly;
   gap: 10px;
 }
-@media scrren and (max-width: 768px) {
+@media (max-width: 768px) {
+  .footer-main-logo {
+    margin-top: 40px;
+  }
   .footer-main-body {
     width: 100% !important;
-    height: 280px !important;
+    height: fit-content !important;
+    padding-bottom: 60px;
     background: #1e2d4d;
     padding-top: 20px;
   }
   .foot-main-body-header {
-    display: flex !important;
-    align-items: center;
     justify-content: center !important;
     flex-direction: column !important;
   }
@@ -130,18 +132,19 @@
     justify-content: center;
     flex-direction: column !important;
   }
+  .foot-netwoek-main {
+    width: 220px;
+  }
 }
 
-@media scrren and (max-width: 468px) {
+@media (max-width: 468px) {
   .footer-main-body {
     width: 100% !important;
-    height: 280px;
+    height: fit-content !important;
     background: #1e2d4d;
     padding-top: 20px;
   }
   .foot-main-body-header {
-    display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column !important;
   }
