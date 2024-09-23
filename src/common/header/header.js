@@ -21,12 +21,16 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
+// mui icons
+
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
 // image imports
 
 import KalingaPremeumLogo from "../../Accets/KalingaPremeumLogo.png";
 
 const pages = ['Home', 'About Us', 'Our Network', 'Our Certification'];
-const productOptions = ['Product 1', 'Product 2', 'Product 3', 'Product 4'];
+const productOptions = ['Wires', 'Cables', 'PVC Pipes', 'Lighting', 'Others'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -59,24 +63,6 @@ function ResponsiveAppBar() {
     <AppBar position="static" sx={{ backgroundColor: 'white', color: 'black' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ justifyContent: 'center' }}>
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography> */}
           <img src={KalingaPremeumLogo} className='logo' />
 
           <Box sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'center' }}>
@@ -116,7 +102,7 @@ function ResponsiveAppBar() {
                 </MenuItem>
               ))}
               <MenuItem onClick={handleOpenProductsMenu}>
-                <Typography sx={{ textAlign: 'center' }}>Our Products</Typography>
+                <Typography sx={{ textAlign: 'center', display: 'flex', alignItems: "center" }}>Our Products <KeyboardArrowDownIcon /></Typography>
               </MenuItem>
               <Menu
                 anchorEl={anchorElProducts}
@@ -150,9 +136,9 @@ function ResponsiveAppBar() {
             ))}
             <Button
               onClick={handleOpenProductsMenu}
-              sx={{ my: 2, color: 'black', display: 'block' }}
+              sx={{ my: 2, color: 'black', display: 'flex', alignItems: "center" }}
             >
-              Our Products
+              Our Products <KeyboardArrowDownIcon />
             </Button>
             <Menu
               anchorEl={anchorElProducts}
@@ -172,7 +158,7 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Button variant="contained" size="large" style={{backgroundColor: "#1E2D4D", padding: "11px 30px", borderRadius: "10px", textTransform: "none"}}>
+            <Button variant="contained" size="large" className='contact_btn' style={{backgroundColor: "#1E2D4D", padding: "11px 30px", borderRadius: "10px", textTransform: "none"}}>
               Contact Us
             </Button>
             <Menu
