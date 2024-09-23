@@ -1,3 +1,84 @@
-.container{
-    padding: 50px 80px;
+/** @format */
+
+.container {
+  padding: 50px 80px;
+}
+.Our-Products-mainbody {
+}
+.Our-Products-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 110px;
+}
+.Our-Products-image {
+  width: 30px;
+  height: 35px;
+}
+.product-image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.product-main-title {
+  color: #000;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.product-title-span {
+  color: #c50568;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.product-viewll {
+  text-decoration: none;
+  color: #c50568;
+  text-align: right;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+/*  */
+.card-grid {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.card {
+  width: 262px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
 }

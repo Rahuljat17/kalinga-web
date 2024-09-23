@@ -46,11 +46,9 @@ class Routers extends Component {
             <Header />
             <Routes>
               <Route exact path="/" element={<Home />} />
-              {/* <Route exact path="/signup" element={<CreateAccount />} /> */}
-              {/* <Route exact path="/footer" element={<Footer />} /> */}
               <Route exact path="*" element={<Error />} />
             </Routes>
-            <Footer/>
+            {/* <Footer/> */}
           </main>
         </div>
       );
