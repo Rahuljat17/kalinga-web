@@ -13,19 +13,15 @@ import Controller from "../containers/controller_cont";
 // import Whatsapp from "../../pages/Dashboard/Container/dashboardconts";
 // import Drawer_option_con from "../containers/drawer_cont";
 import Error from "../../404";
-// import CampaignDetails from "../../pages/Campaign Details/Components/CampaignDetails";
-// import AdminWhatsApp from "../../pages/AdminWhatsApp/Components/AdminWhatsApp";
-// import WhatsappClientCont from "../../pages/Whatsapp Report/Container/WhatsappCont";
-// import BusinessWhatsApp from "../../pages/BusinessWhatsApp/Components/BusinessWhatsApp";
-// import Sms from "../../pages/sms/Container/WhatsappCont";
-// import Voice from "../../pages/voice/Container/WhatsappCont";
-// import VoiceCall from "../../pages/voiceCall/Components/voiceCall";
-// import ContactUs from "../../pages/ContactUs/Container/ContactUsCont";
+
 import Home from "../../pages/home/home";
+import AboutUs from "../../pages/about-us/about-us";
+import OurCertification from "../../pages/our-certification/our-certification";
 import Header from "../../common/header/header";
-// import WhatsappClientCont from "../../pages/Whatsapp Report/Components/Whatsapp";
-// import CreateAccount from "../../auth/container/CreateaccountCont";
-//Help
+import Footer from "../../pages/Footer/Footer";
+import ContactUs from "../../pages/contact-us/contact-us";
+
+
 
 class Routers extends Component {
   render() {
@@ -44,14 +40,17 @@ class Routers extends Component {
             <Controller />
             <Header />
             <Routes>
-              <Route exact path="/" element={<Home/>}/>
-              {/* <Route exact path="/signup" element={<CreateAccount />} /> */}
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/about-us" element={<AboutUs />} />
+              <Route exact path="/our-certification" element={<OurCertification />} />
+              <Route exact path="/contact-us" element={<ContactUs />} />
               <Route exact path="*" element={<Error />} />
             </Routes>
+            <Footer/>
           </main>
         </div>
       );
-    } 
+    }
 
     // Uncomment this to use login facility
 

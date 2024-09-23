@@ -7,3 +7,19 @@
 .logo{
     width: 130px;
 }
+
+@media (max-width: 768px) {
+    .logo{
+        width: 80px;
+        margin: 10px 0px;
+    }
+    .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+        margin: 0 !important;
+    }
+    .css-11b4hzg-MuiToolbar-root{
+        justify-content: space-between !important;
+    }
+    .css-2uchni{
+        display: none !important;
+    }
+}

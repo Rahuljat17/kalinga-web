@@ -60,6 +60,7 @@
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
     "react-export-table-to-excel": "^1.0.6",
+    "react-fast-marquee": "^1.6.5",
     "react-google-recaptcha": "^2.1.0",
     "react-grid-carousel": "^1.0.1",
     "react-hash-scroll": "^1.4.7",
