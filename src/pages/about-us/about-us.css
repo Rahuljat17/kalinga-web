@@ -6,6 +6,8 @@
     justify-content: space-evenly;
     video{
         border-radius: 50%;
+        aspect-ratio: 1;
+        height: 100%;
     }
     .contents{
         max-width: 500px;
@@ -41,8 +43,26 @@
         justify-content: space-between;
         flex-wrap: wrap;
         text-align: center;
-        div{
+        .member{
             width: 20%;
+            position: relative;
+            Button{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 55px;
+                background-color: transparent;
+                color: transparent;
+                box-shadow: none;
+                transition: all 1s;
+            }
+        }
+        .member:hover{
+            Button{
+                background-color: rgba(0, 0, 0, 0.336);
+                color: white;
+            }
         }
         img{
             width: 100%;
@@ -58,7 +78,7 @@
         flex-direction: column;
     }
     .members{
-        div{
+        .member{
             width: 45% !important;
         }
     }

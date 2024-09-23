@@ -158,9 +158,11 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
+            <Link to='./contact-us'>
             <Button variant="contained" size="large" className='contact_btn' style={{backgroundColor: "#1E2D4D", padding: "11px 30px", borderRadius: "10px", textTransform: "none"}}>
               Contact Us
             </Button>
+            </Link>
             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"

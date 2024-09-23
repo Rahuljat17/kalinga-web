@@ -16,8 +16,11 @@ import Error from "../../404";
 
 import Home from "../../pages/home/home";
 import AboutUs from "../../pages/about-us/about-us";
+import OurCertification from "../../pages/our-certification/our-certification";
 import Header from "../../common/header/header";
 import Footer from "../../pages/Footer/Footer";
+import ContactUs from "../../pages/contact-us/contact-us";
+
 
 
 class Routers extends Component {
@@ -39,7 +42,8 @@ class Routers extends Component {
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route exact path="/about-us" element={<AboutUs />} />
-              {/* <Route exact path="/footer" element={<Footer />} /> */}
+              <Route exact path="/our-certification" element={<OurCertification />} />
+              <Route exact path="/contact-us" element={<ContactUs />} />
               <Route exact path="*" element={<Error />} />
             </Routes>
             {/* <Footer/> */}
