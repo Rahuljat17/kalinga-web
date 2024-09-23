@@ -51,8 +51,8 @@
         flex-direction: column;
     }
     .certificates{
-        div{
-            width: 45% !important;
+        .cert-box{
+            width: 41% !important;
         }
     }
 }
