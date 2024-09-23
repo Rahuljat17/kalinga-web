@@ -23,6 +23,7 @@ import Error from "../../404";
 // import ContactUs from "../../pages/ContactUs/Container/ContactUsCont";
 import Home from "../../pages/home/home";
 import Header from "../../common/header/header";
+import Footer from "../../pages/Footer/Footer";
 // import WhatsappClientCont from "../../pages/Whatsapp Report/Components/Whatsapp";
 // import CreateAccount from "../../auth/container/CreateaccountCont";
 //Help
@@ -44,14 +45,16 @@ class Routers extends Component {
             <Controller />
             <Header />
             <Routes>
-              <Route exact path="/" element={<Home/>}/>
+              <Route exact path="/" element={<Home />} />
               {/* <Route exact path="/signup" element={<CreateAccount />} /> */}
+              {/* <Route exact path="/footer" element={<Footer />} /> */}
               <Route exact path="*" element={<Error />} />
             </Routes>
+            <Footer/>
           </main>
         </div>
       );
-    } 
+    }
 
     // Uncomment this to use login facility
 
