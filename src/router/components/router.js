@@ -46,7 +46,7 @@ class Routers extends Component {
               <Route exact path="/contact-us" element={<ContactUs />} />
               <Route exact path="*" element={<Error />} />
             </Routes>
-            {/* <Footer/> */}
+            <Footer/>
           </main>
         </div>
       );
