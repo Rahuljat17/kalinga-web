@@ -1,54 +1,84 @@
-import React,{useState} from "react";
-import '../Imageslider/Imageslider.css';
+import React, { useState, useEffect, useRef } from "react";
+import './Imageslider.css'; // Make sure to use the correct path
 import imageslider from '../../Accets/sliderimage.png';
 
 const Imageslider = () => {
-    const images = [
-        imageslider,
-        imageslider,
-        imageslider,
-    ];
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [active, setActive] = useState(0);
+    const listRef = useRef(null);
+    const dotsRef = useRef([]);
+    const prevRef = useRef(null);
+    const nextRef = useRef(null);
+    const itemsRef = useRef([]);
 
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    const lengthItems = 4; // Total number of slides - 1 (index-based)
+
+    const reloadSlider = (index) => {
+        if (listRef.current && itemsRef.current[index]) {
+            const checkLeft = itemsRef.current[index].offsetLeft;
+            listRef.current.style.left = -checkLeft + 'px';
+
+            const lastActiveDot = dotsRef.current[active];
+            if (lastActiveDot) lastActiveDot.classList.remove('active');
+            dotsRef.current[index].classList.add('active');
+        }
     };
 
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    const handleNext = () => {
+        const newActive = active + 1 > lengthItems ? 0 : active + 1;
+        setActive(newActive);
     };
 
-    const goToSlide = (index) => {
-        setCurrentIndex(index);
+    const handlePrev = () => {
+        const newActive = active - 1 < 0 ? lengthItems : active - 1;
+        setActive(newActive);
     };
+
+    useEffect(() => {
+        reloadSlider(active);
+    }, [active]);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleNext();
+        }, 3000);
+
+        return () => clearInterval(interval); // Cleanup on component unmount
+    }, [active]);
+
     return (
         <>
-            <div>
-                <div className="slider">
-                    <div className="slider-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                        {images.map((image, index) => (
-                            <div className="slide" key={index}>
-                                <img src={image} alt={`Slide ${index}`} />
-                            </div>
-                        ))}
-                    </div>
-
-                    <button className="prev" onClick={prevSlide}>❮</button>
-                    <button className="next" onClick={nextSlide}>❯</button>
-
-                    <div className="dots">
-                        {images.map((_, index) => (
-                            <span
-                                key={index}
-                                className={`dot ${index === currentIndex ? 'active' : ''}`}
-                                onClick={() => goToSlide(index)}
-                            ></span>
-                        ))}
-                    </div>
+            <div className="slider">
+                <div className="list" ref={listRef}>
+                    {[1, 2, 3, 4, 5].map((_, index) => (
+                        <div
+                            key={index}
+                            className="item"
+                            ref={(el) => (itemsRef.current[index] = el)}
+                        >
+                            <img
+                                src={imageslider}
+                                alt={`image${index + 1}`}
+                            />
+                        </div>
+                    ))}
                 </div>
+                <div className="buttons">
+                    <button id="prev" onClick={handlePrev} ref={prevRef}></button>
+                    <button id="next" onClick={handleNext} ref={nextRef}></button>
+                </div>
+                <ul className="dots">
+                    {[...Array(5)].map((_, index) => (
+                        <li
+                            key={index}
+                            className={active === index ? 'active' : ''}
+                            onClick={() => setActive(index)}
+                            ref={(el) => (dotsRef.current[index] = el)}
+                        ></li>
+                    ))}
+                </ul>
             </div>
-
         </>
-    )
-}
+    );
+};
+
 export default Imageslider;

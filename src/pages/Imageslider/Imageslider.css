@@ -1,63 +1,70 @@
-.slider {
-    position: relative;
-    width: 80%;
-    /* max-width: 800px; */
-    margin: 50px auto;
-    overflow: hidden;
+.slider{
+  width: 100vw;
+  max-width: 100vw;
+  height: 600px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+  transition: 1s;
+}
+.list img{
+  width: 100vw;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+.buttons{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 505;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+.dots{
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+}
+.dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 20px;
+}
+.dots li.active {
+  width: 30px;
+}
+@media screen and ( max-width: 768px) { 
+  .slider {
+      height: 400px;
   }
   
-  .slider-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slide {
-    min-width: 100%;
-    transition: 0.5s;
-  }
-  
-  .slide img {
-    width: 100%;
-    /* height: auto; */
-  }
-  
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    color: white;
-    font-size: 24px;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
-  .dots {
-    text-align: center;
-    margin-top: 15px;
-  }
-  
-  .dot {
-    height: 12px;
-    width: 12px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .dot.active {
-    background-color: #717171;
-  }
-  
+}
