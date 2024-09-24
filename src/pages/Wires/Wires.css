@@ -75,33 +75,43 @@
 /* wirepage slider */
 .wirespage-container {
   display: flex;
-  flex-direction: row;
   align-items: center;
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-.left-side-text {
-  flex-shrink: 0;
-  width: 100px;
-  padding-right: 20px;
+.text-marquee {
+  height: 100px; 
+  display: flex;
+  width: 2% !important;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+
+.scrolling-text {
+  display: flex;
+  flex-direction: column;
+  animation: scrollText 6s linear infinite;
+}
+
+
 
 .wirespage-marquee {
-  position: relative;
-  width: 100%;
+  flex: 2; 
   overflow: hidden;
 }
 
 .marquee-content {
   display: flex;
-  gap: 10px;
-  animation: marquee 10s linear infinite;
+  animation: marquee 15s linear infinite;
   align-items: center;
-  padding-left: 20px;
 }
 
 .marquee-item {
   min-width: 150px;
+  margin-right: 10px;
 }
 
 .marquee-item img {
@@ -112,12 +122,13 @@
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
+
 /* wires product */
 .wiresproducts-container {
   width: 80%;
@@ -138,7 +149,6 @@
   list-style: none;
   padding: 0;
   margin-top: 40px;
-
 }
 
 .wiresproducts-list li {
@@ -150,7 +160,7 @@
 }
 
 .wiresproduct-icon {
-  color: #1E2D4D; /* The pink color for icon */
+  color: #1e2d4d; /* The pink color for icon */
   margin-right: 10px;
 }
 
@@ -158,15 +168,15 @@
   background-color: #f9f9f9;
 }
 
-.wirelogo-table{
-    width: 34px;
-    height: 47px;
-    position: relative;
-    top: 19px;
-    left: -10px;
+.wirelogo-table {
+  width: 34px;
+  height: 47px;
+  position: relative;
+  top: 19px;
+  left: -10px;
 }
-.wirepage-items-text{
-    font-size: 20px;
+.wirepage-items-text {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -179,22 +189,23 @@
   .text-secondary-wires {
     font-size: 17px;
   }
-  .wirespage-textslide{
+  .wirespage-textslide {
     margin: 1rem 1rem;
     font-size: 20px;
   }
-  .wirespage-custo-span{
+  .wirespage-custo-span {
     font-size: 20px;
   }
   .wiresproducts-container {
     width: 80%;
     margin: 50px 30px;
   }
-  .wiresproducts-container > h2  {
+  .wiresproducts-container > h2 {
     font-size: 20px;
   }
 
   .wiresproducts-list li {
     font-size: 14px;
   }
+
 }

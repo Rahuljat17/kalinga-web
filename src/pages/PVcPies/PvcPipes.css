@@ -20,6 +20,7 @@
 }
 .pvcpipes-textone {
   margin-bottom: 10px;
+  display: block !important;
   color: #fff;
   text-align: center;
   font-family: Mulish;
@@ -27,8 +28,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  position: relative;
-  left: 120px;
 }
 
 .pvcpipe-texttwo {
@@ -73,6 +72,7 @@
   display: flex;
   align-items: center;
   font-size: 24px;
+  gap: 5px;
 }
 
 .dot {
@@ -128,7 +128,99 @@ tbody td {
 tbody tr:hover {
   background-color: #f5f5f5;
 }
+.wires-logo-image {
+  width: 34px;
+  height: 47px;
+  position: relative;
+  left: -10px;
+  top: 5px;
+}
+/* cipping */
+.casing-capping-container {
+  margin: 2rem 6rem;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
 
+.casing-title {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  gap: 5px;
+  font-weight: bold;
+  color: #000;
+}
+
+.casing-title .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.casing-title .details {
+  color: #db007d;
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.details-table th,
+.details-table td {
+  padding: 10px;
+  text-align: left;
+  /* border: 1px solid #e0e0e0; */
+}
+
+.details-table th {
+  background-color: #f9fafb;
+  /* font-weight: bold; */
+  color: #667085;
+  text-align: center;
+}
+.detail-main-td {
+  text-align: center !important;
+}
+.details-table td {
+  color: #333;
+  color: #101828;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+}
+.casing-imagelogo {
+  width: 34px;
+  height: 47px;
+  position: relative;
+  left: -5px;
+}
+.details-text-casing {
+  color: #c50568;
+  font-family: Mulish;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.wires-span-text{
+  color: #c50568;
+  font-family: Mulish;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 @media (max-width: 768px) {
   .background-container-pvcpipes {
     display: flex;
@@ -161,4 +253,20 @@ tbody tr:hover {
   .marquee-container {
     padding-left: 0px;
   }
+  .casing-capping-container {
+    margin: 1rem 1rem;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  .casing-title{
+    font-size: 20px;
+  }
+  .casing-imagelogo {
+    width: 26px;
+    height: 41px;
+    position: relative;
+    left: -5px;
+    top: 5px;
+}
 }

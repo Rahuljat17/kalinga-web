@@ -33,25 +33,24 @@ const PvcPipes = () => {
                     <div className="pvcpipes-scroll">
                         <h2 className="led-logo-text-span"> <img src={logoone} className="led-logo" />Our <span className="led-logo-span">Customers</span> </h2>
                     </div>
-                    <div className="marquee-container"> 
-                    <Marquee>
-                        <img src={pvcpipeslogo1} className="pvcpipes-marquee-logo" />
-                        <img src={pvcpipeslogo2} className="pvcpipes-marquee-logo" />
-                        <img src={pvcpipeslogo3} className="pvcpipes-marquee-logo" />
-                        <img src={pvcpipeslogo4} className="pvcpipes-marquee-logo" />
-                        <img src={pvcpipeslogo5} className="pvcpipes-marquee-logo" />
-                        <img src={pvcpipeslogo6} className="pvcpipes-marquee-logo" />
-                        <img src={pvcpipeslogo7} className="pvcpipes-marquee-logo" />
-                        <img src={pvcpipeslogo8} className="pvcpipes-marquee-logo" />
-                        <img src={pvcpipeslogo9} className="pvcpipes-marquee-logo" />
-                    </Marquee>
+                    <div className="marquee-container">
+                        <Marquee>
+                            <img src={pvcpipeslogo1} className="pvcpipes-marquee-logo" />
+                            <img src={pvcpipeslogo2} className="pvcpipes-marquee-logo" />
+                            <img src={pvcpipeslogo3} className="pvcpipes-marquee-logo" />
+                            <img src={pvcpipeslogo4} className="pvcpipes-marquee-logo" />
+                            <img src={pvcpipeslogo5} className="pvcpipes-marquee-logo" />
+                            <img src={pvcpipeslogo6} className="pvcpipes-marquee-logo" />
+                            <img src={pvcpipeslogo7} className="pvcpipes-marquee-logo" />
+                            <img src={pvcpipeslogo8} className="pvcpipes-marquee-logo" />
+                            <img src={pvcpipeslogo9} className="pvcpipes-marquee-logo" />
+                        </Marquee>
                     </div>
                 </div>
                 <div className="wires-container">
                     <h2 className="wires-title">
-                        <span className="dot"></span>Our <span className="highlighted">Products</span>
+                        <img src={logoone} className="wires-logo-image" />Our <span className="wires-span-text"> Products</span>
                     </h2>
-
                     <div className="wires-table">
                         <div className="table-section">
                             <h3 className="section-title">RIGID P.V.C CONDUIT</h3>
@@ -92,6 +91,54 @@ const PvcPipes = () => {
                             </table>
                         </div>
                     </div>
+                </div>
+                {/*  */}
+                <div className="casing-capping-container">
+                    <h2 className="casing-title"><img src={logoone} className="casing-imagelogo" /> Casing & Capping  <span className="details-text-casing">Details</span></h2>
+                    <table className="details-table">
+                        <thead>
+                            <tr>
+                                <th>Size (mm)</th>
+                                <th>Qty</th>
+                                <th>Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td className="detail-main-td">Width X Height</td>
+                                <td className="detail-main-td">Pcs</td>
+                                <td className="detail-main-td">in meters</td>
+                            </tr>
+                            <tr>
+                                {/* <td>Width X Height</td> */}
+                                <td>20 - 12 (Heavy) Premium</td>
+                                <td>200</td>
+                                <td>400</td>
+                            </tr>
+                            <tr>
+                                {/* <td>Pcs</td> */}
+                                <td>25 - 16 (Heavy) Premium</td>
+                                <td>100</td>
+                                <td>200</td>
+                            </tr>
+                            <tr>
+                                <td>30 - 15 (Heavy) Premium</td>
+                                <td>100</td>
+                                <td>200</td>
+                            </tr>
+                            <tr>
+                                <td>38 - 19 (Heavy) Premium</td>
+                                <td>50</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>50 - 18 (Heavy) Premium</td>
+                                <td>50</td>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p className="note">Each Casing and Capping Standard length 2 Mtrs</p>
                 </div>
             </div>
 

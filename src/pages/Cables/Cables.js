@@ -62,7 +62,7 @@ const Cables = () => {
             <div className="cables-background">
                 <div className="cables-background-text">
                     <h1>Cables</h1>
-                    <h3>Engineered for durability, our cables ensure smooth power transmission and connectivity, making them ideal for residential and industrial use.</h3>
+                    <h3>Engineered for durability, our cables ensure smooth power <br />transmission and connectivity, making them ideal for  <br />residential and industrial use.</h3>
                 </div>
             </div>
             <div className="cables-customerslide">

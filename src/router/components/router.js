@@ -52,7 +52,7 @@ class Routers extends Component {
               <Route exact path="/our-network" element={<OurNetwork />} />
               <Route exact path="/our-certification" element={<OurCertification />} />
               <Route exact path="/contact-us" element={<ContactUs />} />
-              <Route exact path="/led" element={<Led />} />
+              <Route exact path="/lighting" element={<Led />} />
               <Route exact path="/pvc-pipes" element={<PvcPipes />} />
               <Route exact path="/cables" element={<Cables />} />
               <Route exact path="/wires" element={<Wirespage />} />

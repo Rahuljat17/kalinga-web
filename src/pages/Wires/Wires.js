@@ -61,7 +61,7 @@ const Wirespage = () => {
                 <div className="wirespage-container">
                     <div className="left-side-text">
                     </div>
-                    <div className="wirespage-marquee">
+                    {/* <div className="wirespage-marquee">
                         <div className="marquee-content">
                             {images.map((image, index) => (
                                 <div className="marquee-item" key={index}>
@@ -69,11 +69,27 @@ const Wirespage = () => {
                                 </div>
                             ))}
                         </div>
+                    </div> */}
+                    <div className="wirespage-container">
+                        <div className="text-marquee">
+                            <div className="scrolling-text">
+                            </div>
+                        </div>
+
+                        <div className="wirespage-marquee">
+                            <div className="marquee-content">
+                                {[...images, ...images].map((image, index) => (
+                                    <div className="marquee-item" key={index}>
+                                        <img src={image} alt={`slide-${index}`} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="wiresproducts-container">
-                <h2><img src={wirelogo} className="wirelogo-table"/><span className="highlight">Our</span> Products</h2>
+                <h2><img src={wirelogo} className="wirelogo-table" /><span className="highlight">Our</span> Products</h2>
                 <ul className="wiresproducts-list">
                     <h3 className="wirepage-items-text">Items</h3>
                     {wiresproducts.map((wiresproduct, index) => (

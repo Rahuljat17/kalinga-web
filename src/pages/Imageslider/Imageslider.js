@@ -1,8 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import './Imageslider.css'; // Make sure to use the correct path
-import imageslider from '../../Accets/sliderimage.png';
+
+// Import your images
+import sliderImage1 from '../../Accets/sliderimage.png';
+import sliderImage2 from '../../Accets/homeslider.jpg';
+import sliderImage3 from '../../Accets/homeslider2.jpg';
+import logo from '../../Accets/homeslider.jpg';
 
 const Imageslider = () => {
+    const images = [sliderImage1, sliderImage2, sliderImage3]; // Store multiple images here
     const [active, setActive] = useState(0);
     const listRef = useRef(null);
     const dotsRef = useRef([]);
@@ -10,7 +16,7 @@ const Imageslider = () => {
     const nextRef = useRef(null);
     const itemsRef = useRef([]);
 
-    const lengthItems = 4; // Total number of slides - 1 (index-based)
+    const lengthItems = images.length - 1; // Total number of slides - 1 (index-based)
 
     const reloadSlider = (index) => {
         if (listRef.current && itemsRef.current[index]) {
@@ -46,38 +52,34 @@ const Imageslider = () => {
     }, [active]);
 
     return (
-        <>
-            <div className="slider">
-                <div className="list" ref={listRef}>
-                    {[1, 2, 3, 4, 5].map((_, index) => (
-                        <div
-                            key={index}
-                            className="item"
-                            ref={(el) => (itemsRef.current[index] = el)}
-                        >
-                            <img
-                                src={imageslider}
-                                alt={`image${index + 1}`}
-                            />
-                        </div>
-                    ))}
-                </div>
-                <div className="buttons">
-                    <button id="prev" onClick={handlePrev} ref={prevRef}></button>
-                    <button id="next" onClick={handleNext} ref={nextRef}></button>
-                </div>
-                <ul className="dots">
-                    {[...Array(5)].map((_, index) => (
-                        <li
-                            key={index}
-                            className={active === index ? 'active' : ''}
-                            onClick={() => setActive(index)}
-                            ref={(el) => (dotsRef.current[index] = el)}
-                        ></li>
-                    ))}
-                </ul>
+        <div className="slider">
+            <div className="list" ref={listRef}>
+                {images.map((image, index) => (
+                    <div
+                        key={index}
+                        className="item"
+                        ref={(el) => (itemsRef.current[index] = el)}
+                    >
+                        <img
+                            src={image}
+                            alt={`Slide ${index + 1}`}
+                        />
+
+                    </div>
+                ))}
             </div>
-        </>
+
+            <ul className="dots">
+                {images.map((_, index) => (
+                    <li
+                        key={index}
+                        className={active === index ? 'active' : ''}
+                        onClick={() => setActive(index)}
+                        ref={(el) => (dotsRef.current[index] = el)}
+                    ></li>
+                ))}
+            </ul>
+        </div>
     );
 };
 

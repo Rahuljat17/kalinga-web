@@ -98,6 +98,15 @@ const Others = () => {
                         <img src={tapelogo} className="tape-image-main"/>
                        </div>
                     </div>
+                    {/* analogo meter */}
+                    <div className="anolog-main">
+                        <h2 className="analog-main-text">Digital & Analog Meter</h2>
+                    </div>
+                    <div className="analog-main-body">
+                       <div className="analog-grid-body">
+                        <img src={meterlogo} className="analog-image-main"/>
+                       </div>
+                    </div>
                 </div>
             </div>
         </>
