@@ -208,7 +208,7 @@ h1 {
     object-fit: cover;
   }
   .marquee-ledpage > img {
-    width: 80px; /* Reduce the image size for smaller screens */
+    width: 80px; 
     height: 80px;
   }
 
@@ -224,7 +224,7 @@ h1 {
     }
   }
   .marquee-container-led {
-    margin-left: 00px;
+    margin-left: 0px;
     margin-bottom: 20px;
     position: relative;
   }
