@@ -1,0 +1,253 @@
+/** @format */
+
+.background-container-others {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url("../../Accets/others\ background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-container-others {
+  text-align: center !important;
+  color: white;
+}
+
+.text-primary-others {
+  margin-bottom: 10px;
+  display: block !important;
+  color: #fff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-secondary-others {
+  color: #fff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+.otherpage-cuto-image {
+  width: 34px;
+  height: 47px;
+  position: relative;
+  top: 18px;
+  left: -10px;
+}
+
+.otherpage-textslide {
+  margin: 3rem 7.5rem;
+  color: #000;
+  font-family: Mulish;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.otherpage-custo-span {
+  color: #c50568;
+  font-family: Mulish;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.otherpage-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.left-side-text {
+  flex-shrink: 0;
+  width: 100px;
+  padding-right: 20px;
+}
+
+.otherpage-marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 10px;
+  animation: marquee 10s linear infinite;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.marquee-item {
+  min-width: 150px;
+}
+
+.marquee-item img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* card up */
+.PVC-Insulation-con {
+  background-color: #1e2d4d;
+  margin: 3rem auto;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+  height: 50px;
+}
+.PVC-Insulation-textone {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+/* mcb background */
+.mcb-main {
+  background-color: #1e2d4d;
+  margin: 2rem auto;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1%;
+  height: 50px;
+}
+.mcb-main-text {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+/*  */
+.Insulation-textimage {
+  color: #000;
+  font-family: Mulish;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Insulation-image-other {
+  width: 34px;
+  height: 45px;
+  position: relative;
+  top: 17px;
+  left: -10px;
+}
+.Insulation-image-otherspan {
+  color: #c50568;
+  font-family: Mulish;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.Insulation-towerlogo {
+  margin: 5rem 8rem;
+}
+/* card mcsb */
+.mcb-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mcb-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.mcbimage-body {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* tape  */
+.tape-main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.tape-grid-body {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+.tape-image-main {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .background-container-others {
+    height: max-content;
+  }
+
+  .text-primary-others {
+    font-size: 20px;
+  }
+
+  .text-secondary-others {
+    font-size: 16px;
+  }
+  .Insulation-towerlogo {
+    margin: 1rem 1rem;
+  }
+  .Insulation-image-otherspan {
+    font-size: 20px;
+  }
+  .Insulation-textimage {
+    font-size: 20px;
+  }
+  .otherpage-textslide {
+    margin: 1rem 1rem;
+    font-size: 20px;
+  }
+  .otherpage-custo-span {
+    font-size: 20px;
+  }
+  .mcb-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

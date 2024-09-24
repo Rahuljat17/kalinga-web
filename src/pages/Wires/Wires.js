@@ -33,6 +33,16 @@ const Wirespage = () => {
         slide12,
         slide13,
     ];
+    const wiresproducts = [
+        "PVC INSULATED SINGLE CORE UNSHEATHED FLEXIBLE/ MULTISTRAND WIRES & CABLES WITH BARE COPPER CONDUCTOR 1100V GRADE IS:694-2010",
+        "PVC INSULATED AND UNSHEATHED CIRCULAR FLEXIBLE WITH BARE COPPER CONDUCTOR",
+        "TELEPHONE CABLE AS PER ITD SPECIFICATION S/WS- 113C & S/WS- 114C",
+        "T.V. COAXIAL CABLES & CC T.V. CABLES",
+        "3 CRORE SUBMERSIBLE CABLE 100 Mts (COOPER)",
+        "COMPUTER CABLE FOR NETWORKING & DSL WIRING",
+        "RIGID P.V.C CONDUIT",
+        "LONG BEND"
+    ];
     return (
         <>
             <div className="background-container-wires">
@@ -61,6 +71,18 @@ const Wirespage = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="wiresproducts-container">
+                <h2><img src={wirelogo} className="wirelogo-table"/><span className="highlight">Our</span> Products</h2>
+                <ul className="wiresproducts-list">
+                    <h3 className="wirepage-items-text">Items</h3>
+                    {wiresproducts.map((wiresproduct, index) => (
+                        <li key={index}>
+                            <span className="wiresproduct-icon">▶</span>
+                            {wiresproduct}
+                        </li>
+                    ))}
+                </ul>
             </div>
         </>
     )

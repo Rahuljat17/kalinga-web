@@ -26,6 +26,7 @@ import Led from "../../pages/LED/Led";
 import PvcPipes from "../../pages/PVcPies/PvcPipes";
 import Cables from "../../pages/Cables/Cables";
 import Wirespage from "../../pages/Wires/Wires";
+import Others from "../../pages/Others/Others";
 
 
 
@@ -52,9 +53,11 @@ class Routers extends Component {
               <Route exact path="/our-certification" element={<OurCertification />} />
               <Route exact path="/contact-us" element={<ContactUs />} />
               <Route exact path="/led" element={<Led />} />
-              <Route exact path="/pvcpipes" element={<PvcPipes />} />
+              <Route exact path="/pvc-pipes" element={<PvcPipes />} />
               <Route exact path="/cables" element={<Cables />} />
               <Route exact path="/wires" element={<Wirespage />} />
+              <Route exact path="/others" element={<Others />} />
+
               <Route exact path="*" element={<Error />} />
             </Routes>
             <Footer />
