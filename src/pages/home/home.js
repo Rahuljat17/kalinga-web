@@ -27,6 +27,7 @@ import mrlogo6 from '../../Accets/image (7).png';
 import mrlogo7 from '../../Accets/image (8).png';
 import mrlogo8 from '../../Accets/image (9).png';
 import Marquee from "react-fast-marquee";
+import Imageslider from '../Imageslider/Imageslider';
 
 const Home = () => {
   const cards = [
@@ -41,6 +42,7 @@ const Home = () => {
   return (
     <div>
       {/* <img src={HeroImage} style={{ width: "100%", objectFit: "cover" }} /> */}
+      <Imageslider />
       {/* scroll */}
       <div>
         <div className="marquee-container">

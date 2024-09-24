@@ -1,0 +1,83 @@
+/** @format */
+
+.cables-background {
+  background-image: url("../../Accets/cable\ background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cables-background-text {
+  /* color: white; 
+  font-size: 2em;
+  text-align: center;
+  padding: 20px; */
+}
+.cables-background-text > h1 {
+}
+.cables-background-text > h3 {
+  font-size: 24px;
+  text-align: center;
+}
+/* Main container for product list */
+.product-list {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 30px 60px;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading style */
+.product-heading {
+  font-size: 24px;
+  color: #d10062; /* Magenta color for heading */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.product-items {
+  list-style-type: none;
+  padding-left: 0;
+}
+.product-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.product-item span {
+  color: #d10062; /* Arrow color */
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .cables-background {
+    background-image: url("../../Accets/cable\ background.png");
+    width: 100%;
+    height: max-content;
+    display: flex;
+  }
+  .product-list {
+    padding: 10px;
+  }
+
+  .product-heading {
+    font-size: 20px;
+  }
+
+  .product-item {
+    font-size: 14px;
+  }
+}

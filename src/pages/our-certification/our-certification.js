@@ -2,15 +2,15 @@ import React from 'react';
 import './our-certification.css'
 import MainVideo from "../../Accets/WhatsApp Video 2024-09-23 at 11.55.16 AM.mp4";
 import HeadingIcon from "../../Accets/Group 1.png";
-import Pic1 from "../../Accets/image.png";
-import Pic2 from "../../Accets/image (1).png";
-import Pic3 from "../../Accets/image (2).png";
-import Pic4 from "../../Accets/image (3).png";
-import Pic5 from "../../Accets/image (4).png";
-import Pic6 from "../../Accets/image (5).png";
-import Pic7 from "../../Accets/image (6).png";
-import Pic8 from "../../Accets/image (7).png";
-import Pic9 from "../../Accets/image(8).png";
+import Pic1 from "../../Accets/certificate1.png";
+import Pic2 from "../../Accets/certificate2.png";
+import Pic3 from "../../Accets/certificate3.png";
+import Pic4 from "../../Accets/certificate4.png";
+import Pic5 from "../../Accets/certificate5.png";
+import Pic6 from "../../Accets/certificate6.png";
+import Pic7 from "../../Accets/certificate7.png";
+import Pic8 from "../../Accets/certificate8.png";
+import Pic9 from "../../Accets/certificate9.png";
 
 
 const AboutUs = () => {
