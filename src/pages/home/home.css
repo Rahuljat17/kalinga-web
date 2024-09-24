@@ -49,15 +49,14 @@
   line-height: normal;
 }
 .card-grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
-  flex-wrap: wrap;
   padding: 10px;
+  margin: 5px 130px;
 }
 
 .card {
-  width: 262px;
   background-color: #fff;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -67,7 +66,6 @@
   background: #fff;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
 }
-
 /* .card:hover {
   transform: translateY(-5px);
 } */
@@ -322,16 +320,24 @@
 .marquee {
   flex: 3;
   display: flex;
-  flex-direction: row; /* Make it scroll vertically */
-  height: 300px; /* Adjust the height as needed */
-  overflow: hidden; /* Hide content that overflows */
+  flex-direction: row;
+  height: 250px;
+  overflow: hidden;
 }
 
 .marquee-logo {
   width: 100px;
   margin: 10px 0;
 }
-
+.worked-title {
+  color: #000;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center !important;
+}
 @media screen and (max-width: 768px) {
   .product-main-title {
     font-size: 20px;
@@ -438,5 +444,22 @@
   }
   .certified-table-row li {
     font-size: 12px;
+  }
+  .worked-title {
+    font-size: 16px;
+  }
+  .marquee {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    overflow: hidden;
+  }
+  .marquee-container {
+    margin-top: 30px;
+  }
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile */
+    margin: 0px 0px;
   }
 }

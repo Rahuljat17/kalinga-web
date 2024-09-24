@@ -26,9 +26,6 @@ import mrlogo5 from '../../Accets/image (6).png';
 import mrlogo6 from '../../Accets/image (7).png';
 import mrlogo7 from '../../Accets/image (8).png';
 import mrlogo8 from '../../Accets/image (9).png';
-
-
-
 import Marquee from "react-fast-marquee";
 
 const Home = () => {
@@ -46,19 +43,9 @@ const Home = () => {
       {/* <img src={HeroImage} style={{ width: "100%", objectFit: "cover" }} /> */}
       {/* scroll */}
       <div>
-        {/* <Marquee className="marquee" speed={100}>
-          <img src={mrlogo1} className='marquee-logo'/>
-          <img src={mrlogo2} className='marquee-logo'/>
-          <img src={mrlogo3} className='marquee-logo'/>
-          <img src={mrlogo4} className='marquee-logo'/>
-          <img src={mrlogo5} className='marquee-logo'/>
-          <img src={mrlogo6} className='marquee-logo'/>
-          <img src={mrlogo7} className='marquee-logo'/>
-          <img src={mrlogo8} className='marquee-logo'/>
-        </Marquee> */}
         <div className="marquee-container">
-          <div className="marquee-text">
-            <h1 style={{textAlign:"center"}}>Worked with</h1>
+          <div className="marquee-text-two">
+            <h1 className='worked-title'>Worked with</h1>
           </div>
           <Marquee className="marquee" direction="left" speed={200}>
             <img src={mrlogo1} className='marquee-logo' />
@@ -71,7 +58,6 @@ const Home = () => {
             <img src={mrlogo8} className='marquee-logo' />
           </Marquee>
         </div>
-
       </div>
       <div className='Our-Products-mainbody'>
         <div className='Our-Products-title'>
@@ -125,7 +111,7 @@ const Home = () => {
             <h3 className='certified-imagetext'>We are <span className='certified-imagespan'>Recognised and Certified</span></h3>
           </div>
           <div>
-            <Link to="/certified" style={{ textDecoration: "none" }}>View All <span><MdOutlineKeyboardDoubleArrowRight fontSize={20} /></span> </Link>
+            <Link to="/our-certification" style={{ textDecoration: "none" }}>View All <span><MdOutlineKeyboardDoubleArrowRight fontSize={20} /></span> </Link>
           </div>
         </div>
         <div className='certified-table-main'>
