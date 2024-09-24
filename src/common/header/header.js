@@ -93,14 +93,17 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} style={{ margin: "40px" }}>
-                  <Typography sx={{ textAlign: 'center', textTransform: "none" }}>
-                    <Link to={`/${page.replace(/\s+/g, '-').toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
-                      {page}
-                    </Link>
-                  </Typography>
-                </MenuItem>
-              ))}
+  <MenuItem key={page} onClick={handleCloseNavMenu} style={{ margin: "40px" }}>
+    <Typography sx={{ textAlign: 'center', textTransform: "none" }}>
+      <Link
+        to={page === 'Home' ? '/' : `/${page.replace(/\s+/g, '-').toLowerCase()}`}
+        style={{ textDecoration: 'none', color: 'black' }}
+      >
+        {page}
+      </Link>
+    </Typography>
+  </MenuItem>
+))}
               <MenuItem onClick={handleOpenProductsMenu}>
                 <Typography sx={{ textAlign: 'center', display: 'flex', alignItems: "center" }}>Our Products <KeyboardArrowDownIcon /></Typography>
               </MenuItem>
@@ -130,7 +133,7 @@ function ResponsiveAppBar() {
                 sx={{ my: 2, color: 'black', display: 'block' }}
               >
                 <NavLink
-                  to={`/${page.replace(/\s+/g, '-').toLowerCase()}`}
+                  to={page === 'Home' ? '/' : `/${page.replace(/\s+/g, '-').toLowerCase()}`}
                   style={({ isActive }) => ({
                     textDecoration: 'none',
                     color: isActive ? '#C50568' : 'black',
