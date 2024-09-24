@@ -13,7 +13,7 @@
 }
 .Our-Products-image {
   width: 33px;
-  height: 47px;
+  /* height: 47px; */
 }
 .product-image-section {
   display: flex;
@@ -149,7 +149,6 @@
 }
 .ourunits-image {
   width: 34px;
-  height: 47px;
   position: relative;
   top: 30px;
 }
@@ -214,7 +213,6 @@
 }
 .certified-image {
   width: 34px;
-  height: 47px;
 }
 .certified-imagespan {
   color: #c50568;
@@ -354,7 +352,7 @@
   }
   .Our-Products-image {
     width: 22px;
-    height: 25px;
+    /* height: 25px; */
   }
   /* expertise */
   .expertise-body {
@@ -403,7 +401,7 @@
   }
   .ourunits-image {
     width: 22px;
-    height: 24px;
+    top: 20px;
     position: relative;
   }
   .ourunits-inside-body {
@@ -413,7 +411,13 @@
     margin: 10px 10px;
     flex-direction: column;
   }
+  .ourunits-image-section {
+    margin: 5px 20px;
+  }
   /* certified */
+  .certified-image {
+    width: 22px;
+  }
   .certified-imagespan {
     font-size: 17px;
   }
@@ -457,6 +461,7 @@
   }
   .marquee-container {
     margin-top: 30px;
+    padding: 0 20px 0 !important;
   }
   .card-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile */
