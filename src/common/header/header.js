@@ -19,7 +19,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import { NavLink } from 'react-router-dom';
 
 // mui icons
 
@@ -93,7 +93,7 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}  style={{ margin: "40px"}}>
+                <MenuItem key={page} onClick={handleCloseNavMenu} style={{ margin: "40px" }}>
                   <Typography sx={{ textAlign: 'center', textTransform: "none" }}>
                     <Link to={`/${page.replace(/\s+/g, '-').toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
                       {page}
@@ -112,7 +112,7 @@ function ResponsiveAppBar() {
                 {productOptions.map((option) => (
                   <MenuItem key={option} onClick={handleCloseProductsMenu}>
                     <Typography sx={{ textAlign: 'center' }}>
-                      <Link to={`/products/${option.replace(/\s+/g, '-').toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
+                      <Link to={`/${option.replace(/\s+/g, '-').toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
                         {option}
                       </Link>
                     </Typography>
@@ -129,9 +129,16 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'black', display: 'block' }}
               >
-                <Link to={`/${page.replace(/\s+/g, '-').toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
+                <NavLink
+                  to={`/${page.replace(/\s+/g, '-').toLowerCase()}`}
+                  style={({ isActive }) => ({
+                    textDecoration: 'none',
+                    color: isActive ? '#C50568' : 'black',
+                    borderBottom: isActive ? '2px solid black' : 'none',
+                  })}
+                >
                   {page}
-                </Link>
+                </NavLink>
               </Button>
             ))}
             <Button
@@ -148,7 +155,7 @@ function ResponsiveAppBar() {
               {productOptions.map((option) => (
                 <MenuItem key={option} onClick={handleCloseProductsMenu}>
                   <Typography sx={{ textAlign: 'center' }}>
-                    <Link to={`/products/${option.replace(/\s+/g, '-').toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
+                    <Link to={`/${option.replace(/\s+/g, '-').toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
                       {option}
                     </Link>
                   </Typography>
@@ -159,9 +166,9 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Link to='./contact-us'>
-            <Button variant="contained" size="large" className='contact_btn' style={{backgroundColor: "#1E2D4D", padding: "11px 30px", borderRadius: "10px", textTransform: "none"}}>
-              Contact Us
-            </Button>
+              <Button variant="contained" size="large" className='contact_btn' style={{ backgroundColor: "#1E2D4D", padding: "11px 30px", borderRadius: "10px", textTransform: "none" }}>
+                Contact Us
+              </Button>
             </Link>
             <Menu
               sx={{ mt: '45px' }}
