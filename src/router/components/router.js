@@ -16,10 +16,17 @@ import Error from "../../404";
 
 import Home from "../../pages/home/home";
 import AboutUs from "../../pages/about-us/about-us";
+import OurNetwork from "../../pages/our-network/our-network";
 import OurCertification from "../../pages/our-certification/our-certification";
 import Header from "../../common/header/header";
 import Footer from "../../pages/Footer/Footer";
 import ContactUs from "../../pages/contact-us/contact-us";
+import Wires from "../../pages/LED/Led";
+import Led from "../../pages/LED/Led";
+import PvcPipes from "../../pages/PVcPies/PvcPipes";
+import Cables from "../../pages/Cables/Cables";
+import Wirespage from "../../pages/Wires/Wires";
+import Others from "../../pages/Others/Others";
 
 
 
@@ -42,11 +49,18 @@ class Routers extends Component {
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route exact path="/about-us" element={<AboutUs />} />
+              <Route exact path="/our-network" element={<OurNetwork />} />
               <Route exact path="/our-certification" element={<OurCertification />} />
               <Route exact path="/contact-us" element={<ContactUs />} />
+              <Route exact path="/lighting" element={<Led />} />
+              <Route exact path="/pvc-pipes" element={<PvcPipes />} />
+              <Route exact path="/cables" element={<Cables />} />
+              <Route exact path="/wires" element={<Wirespage />} />
+              <Route exact path="/others" element={<Others />} />
+
               <Route exact path="*" element={<Error />} />
             </Routes>
-            <Footer/>
+            <Footer />
           </main>
         </div>
       );

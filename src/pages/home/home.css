@@ -13,7 +13,7 @@
 }
 .Our-Products-image {
   width: 33px;
-  height: 47px;
+  /* height: 47px; */
 }
 .product-image-section {
   display: flex;
@@ -49,15 +49,14 @@
   line-height: normal;
 }
 .card-grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
-  flex-wrap: wrap;
   padding: 10px;
+  margin: 5px 130px;
 }
 
 .card {
-  width: 262px;
   background-color: #fff;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -67,7 +66,6 @@
   background: #fff;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
 }
-
 /* .card:hover {
   transform: translateY(-5px);
 } */
@@ -151,7 +149,6 @@
 }
 .ourunits-image {
   width: 34px;
-  height: 47px;
   position: relative;
   top: 30px;
 }
@@ -216,7 +213,6 @@
 }
 .certified-image {
   width: 34px;
-  height: 47px;
 }
 .certified-imagespan {
   color: #c50568;
@@ -322,16 +318,24 @@
 .marquee {
   flex: 3;
   display: flex;
-  flex-direction: row; /* Make it scroll vertically */
-  height: 300px; /* Adjust the height as needed */
-  overflow: hidden; /* Hide content that overflows */
+  flex-direction: row;
+  height: 250px;
+  overflow: hidden;
 }
 
 .marquee-logo {
   width: 100px;
   margin: 10px 0;
 }
-
+.worked-title {
+  color: #000;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center !important;
+}
 @media screen and (max-width: 768px) {
   .product-main-title {
     font-size: 20px;
@@ -348,7 +352,7 @@
   }
   .Our-Products-image {
     width: 22px;
-    height: 25px;
+    /* height: 25px; */
   }
   /* expertise */
   .expertise-body {
@@ -397,7 +401,7 @@
   }
   .ourunits-image {
     width: 22px;
-    height: 24px;
+    top: 20px;
     position: relative;
   }
   .ourunits-inside-body {
@@ -407,7 +411,13 @@
     margin: 10px 10px;
     flex-direction: column;
   }
+  .ourunits-image-section {
+    margin: 5px 20px;
+  }
   /* certified */
+  .certified-image {
+    width: 22px;
+  }
   .certified-imagespan {
     font-size: 17px;
   }
@@ -438,5 +448,23 @@
   }
   .certified-table-row li {
     font-size: 12px;
+  }
+  .worked-title {
+    font-size: 16px;
+  }
+  .marquee {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    overflow: hidden;
+  }
+  .marquee-container {
+    margin-top: 30px;
+    padding: 0 20px 0 !important;
+  }
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile */
+    margin: 0px 0px;
   }
 }

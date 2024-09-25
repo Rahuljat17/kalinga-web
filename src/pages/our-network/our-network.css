@@ -1,0 +1,49 @@
+.container{
+    padding: 50px 80px;
+}
+.our-network{
+    padding: 0 100px;
+    text-align: center;
+    animation: slideRightToLeft 0.5s ease-out forwards;
+    .img-lg{
+        width: 100%;
+    }
+    .img-sm{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0;
+        img{
+            width: 49%;
+        }
+    }
+    h3{
+        margin: 40px 0 35px;
+        font-weight: 500;
+    }
+    p{
+        color: rgb(97, 97, 97);
+    }
+}
+
+@keyframes slideRightToLeft {
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        padding: 50px 30px;
+    }
+    .our-network{
+        padding: 0 0px;
+    }
+    .css-19kzrtu{
+        padding: 24px 0px !important;
+    }
+}

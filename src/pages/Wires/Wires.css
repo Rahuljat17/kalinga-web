@@ -1,0 +1,211 @@
+/** @format */
+
+.background-container-wires {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url("../../Accets/wires\ background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-container-wires {
+  text-align: center !important;
+  color: white;
+}
+
+.text-primary-wires {
+  margin-bottom: 10px;
+  display: block !important;
+  color: #fff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-secondary-wires {
+  color: #fff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+/*  */
+.wirespage-cuto-image {
+  width: 34px;
+  height: 47px;
+  position: relative;
+  top: 18px;
+  left: -5px;
+}
+.wirespage-textslide {
+  margin: 3rem 7rem;
+  color: #000;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.wirespage-custo-span {
+  color: #c50568;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.wirespage-spantext {
+  color: #c50568;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* wirepage slider */
+.wirespage-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-marquee {
+  height: 100px; 
+  display: flex;
+  width: 2% !important;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scrolling-text {
+  display: flex;
+  flex-direction: column;
+  animation: scrollText 6s linear infinite;
+}
+
+
+
+.wirespage-marquee {
+  flex: 2; 
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 15s linear infinite;
+  align-items: center;
+}
+
+.marquee-item {
+  min-width: 150px;
+  margin-right: 10px;
+}
+
+.marquee-item img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* wires product */
+.wiresproducts-container {
+  width: 80%;
+  margin: 90px 120px;
+  font-family: Arial, sans-serif;
+}
+
+.wiresproducts-container > h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  color: #ff0066; /* The pink color */
+}
+
+.wiresproducts-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.wiresproducts-list li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.wiresproduct-icon {
+  color: #1e2d4d; /* The pink color for icon */
+  margin-right: 10px;
+}
+
+.wiresproducts-list li:hover {
+  background-color: #f9f9f9;
+}
+
+.wirelogo-table {
+  width: 34px;
+  height: 47px;
+  position: relative;
+  top: 19px;
+  left: -10px;
+}
+.wirepage-items-text {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .background-container-wires {
+    height: max-content;
+  }
+  .text-primary-wires {
+    font-size: 22px;
+  }
+  .text-secondary-wires {
+    font-size: 17px;
+  }
+  .wirespage-textslide {
+    margin: 1rem 1rem;
+    font-size: 20px;
+  }
+  .wirespage-custo-span {
+    font-size: 20px;
+  }
+  .wiresproducts-container {
+    width: 80%;
+    margin: 50px 30px;
+  }
+  .wiresproducts-container > h2 {
+    font-size: 20px;
+  }
+
+  .wiresproducts-list li {
+    font-size: 14px;
+  }
+
+}

@@ -11,6 +11,9 @@ import Pic6 from "../../Accets/certificate6.png";
 import Pic7 from "../../Accets/certificate7.png";
 import Pic8 from "../../Accets/certificate8.png";
 import Pic9 from "../../Accets/certificate9.png";
+import Pic10 from "../../Accets/certificate10.png";
+import Pic11 from "../../Accets/certificate11.png";
+import Pic12 from "../../Accets/certificate12.png";
 
 
 const AboutUs = () => {
@@ -63,6 +66,21 @@ const AboutUs = () => {
               <img src={Pic8} />
               <h4>Certificate of Registration</h4>
               <p>ISO 9001 : 2015</p>
+            </div>
+            <div className='cert-box'>
+              <img src={Pic10} />
+              <h4>Certificate of Registration</h4>
+              <p>ISO 45001: 2018</p>
+            </div>
+            <div className='cert-box'>
+              <img src={Pic11} />
+              <h4>Certificate of Registration</h4>
+              <p>ISO 9001: 2015</p>
+            </div>
+            <div className='cert-box'>
+              <img src={Pic12} />
+              <h4>Certificate of Registration</h4>
+              <p>ISO 14001: 2015</p>
             </div>
           </div>
 
