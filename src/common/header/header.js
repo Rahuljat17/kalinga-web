@@ -128,9 +128,10 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
               <Button
+              disableRipple
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'black', display: 'block' }}
+                sx={{ my: 2, color: 'black', display: 'block', '&:hover': { backgroundColor: 'transparent', color: 'black' }, }}
               >
                 <NavLink
                   to={page === 'Home' ? '/' : `/${page.replace(/\s+/g, '-').toLowerCase()}`}
