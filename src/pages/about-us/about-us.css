@@ -69,6 +69,70 @@
         }
     }
 }
+.history{
+    display: flex;
+    justify-content: center;
+}
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8%; /* Adjusts the starting point of the line */
+    width: 84%; /* Ensures the line only spans between the first and last event */
+    height: 2px;
+    background-color: #ccc;
+}
+
+.timeline-event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+.timeline-event:before {
+    content: '';
+    position: absolute;
+    top: -40px; /* Connects the top line */
+    width: 2px;
+    height: 40px;
+    background-color: #ccc;
+}
+
+.event-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.event-date {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 150px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 @media (max-width: 768px) {
     .container{

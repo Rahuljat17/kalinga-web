@@ -308,6 +308,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 130px 0 !important;
 }
 
 .marquee {
