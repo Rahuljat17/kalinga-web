@@ -9,6 +9,8 @@ import Pic1 from "../../Accets/sudhir sethi[1].png";
 import Pic2 from "../../Accets/kunal sethi[1].png";
 import Pic3 from "../../Accets/Frame 62.png";
 import Pic4 from "../../Accets/Frame 63.png";
+import Historypic1 from "../../Accets/historypic1.png";
+import Historypic2 from "../../Accets/historypic2.png";
 
 // Array for team members
 const teamMembers = [
@@ -46,6 +48,78 @@ const AboutUs = () => {
         </div>
       </div>
       <div className='ourTeams'>
+        <h2><img src={HeadingIcon} alt="Heading Icon" /><span>Our</span><span>Timeline</span></h2>
+        </div>
+      <div className='history'>
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="event-date">1947</div>
+            <div class="event-icon">
+              <img src={Historypic1} alt="Shri Bal Raj Sethi" />
+            </div>
+            <div class="event-description">Shri Bal Raj Sethi immigrates from Pindigheb.</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">1949</div>
+            <div class="event-icon">
+              <img src={Historypic2} alt="Royal Indian Navy Logo" />
+            </div>
+            <div class="event-description">Shri Bal Raj Sethi joins the Royal Indian Navy.</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">1959</div>
+            <div class="event-icon"></div>
+            <div class="event-description">After serving the Royal Indian Navy, settles in New Delhi with his budding family.</div>
+          </div>
+        </div>
+      </div>
+      <div className='history'>
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="event-date">1947</div>
+            <div class="event-icon">
+              <img src={Historypic1} alt="Shri Bal Raj Sethi" />
+            </div>
+            <div class="event-description">Shri Bal Raj Sethi immigrates from Pindigheb.</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">1949</div>
+            <div class="event-icon">
+              <img src={Historypic2} alt="Royal Indian Navy Logo" />
+            </div>
+            <div class="event-description">Shri Bal Raj Sethi joins the Royal Indian Navy.</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">1959</div>
+            <div class="event-icon"></div>
+            <div class="event-description">After serving the Royal Indian Navy, settles in New Delhi with his budding family.</div>
+          </div>
+        </div>
+      </div>
+      <div className='history'>
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="event-date">1947</div>
+            <div class="event-icon">
+              <img src={Historypic1} alt="Shri Bal Raj Sethi" />
+            </div>
+            <div class="event-description">Shri Bal Raj Sethi immigrates from Pindigheb.</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">1949</div>
+            <div class="event-icon">
+              <img src={Historypic2} alt="Royal Indian Navy Logo" />
+            </div>
+            <div class="event-description">Shri Bal Raj Sethi joins the Royal Indian Navy.</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">1959</div>
+            <div class="event-icon"></div>
+            <div class="event-description">After serving the Royal Indian Navy, settles in New Delhi with his budding family.</div>
+          </div>
+        </div>
+      </div>
+      <div className='ourTeams'>
         <h2><img src={HeadingIcon} alt="Heading Icon" /><span>Meet our</span><span>team</span></h2>
         <div className='members'>
           {teamMembers.map((member) => (
@@ -70,7 +144,7 @@ const AboutUs = () => {
           <p style={{ marginTop: '20px', fontSize: "14px" }}>{selectedMember?.details}</p>
         </DialogContent>
         <DialogActions>
-          <IconButton aria-label="cross" style={{position: "absolute", top: "8px"}} onClick={handleClose}>
+          <IconButton aria-label="cross" style={{ position: "absolute", top: "8px" }} onClick={handleClose}>
             <CloseIcon />
           </IconButton>
         </DialogActions>

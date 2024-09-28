@@ -56,17 +56,16 @@ const Others = () => {
                             Our <span className="otherpage-custo-span">Customers</span>
                         </h3>
                     </div>
-                    <div className="otherpage-container">
-                        <div className="left-side-text">
-                        </div>
-                        <div className="otherpage-marquee">
-                            <div className="marquee-content">
-                                {images.map((image, index) => (
-                                    <div className="marquee-item" key={index}>
-                                        <img src={image} alt={`slide-${index}`} />
-                                    </div>
-                                ))}
-                            </div>
+                    <div className="product-marquee">
+                        <div class="marquee marquee--8">
+                            <img class="marquee__item" src={slide1} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={slide2} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={slide3} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={slide4} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={slide5} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={slide6} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={slide7} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={slide8} width="100" height="100" alt="" />
                         </div>
                     </div>
                 </div>
@@ -81,12 +80,12 @@ const Others = () => {
                     {/*  */}
                     <div className="mcb-grid-container">
                         <div className="mcb-grid">
-                            <img src={othercard1} alt="Image 1" className="mcbimage-body"/>
-                            <img src={othercard2} alt="Image 2" className="mcbimage-body"/>
-                            <img src={othercard3} alt="Image 3" className="mcbimage-body"/>
-                            <img src={othercard4} alt="Image 4" className="mcbimage-body"/>
-                            <img src={othercard5} alt="Image 5" className="mcbimage-body"/>
-                            <img src={othercard6} alt="Image 6" className="mcbimage-body"/>
+                            <img src={othercard1} alt="Image 1" className="mcbimage-body" />
+                            <img src={othercard2} alt="Image 2" className="mcbimage-body" />
+                            <img src={othercard3} alt="Image 3" className="mcbimage-body" />
+                            <img src={othercard4} alt="Image 4" className="mcbimage-body" />
+                            <img src={othercard5} alt="Image 5" className="mcbimage-body" />
+                            <img src={othercard6} alt="Image 6" className="mcbimage-body" />
                         </div>
                     </div>
                     {/* insulation con */}
@@ -94,18 +93,18 @@ const Others = () => {
                         <h1 className="PVC-Insulation-textone">PVC Insulation Tape</h1>
                     </div>
                     <div className="tape-main-body">
-                       <div className="tape-grid-body">
-                        <img src={tapelogo} className="tape-image-main"/>
-                       </div>
+                        <div className="tape-grid-body">
+                            <img src={tapelogo} className="tape-image-main" />
+                        </div>
                     </div>
                     {/* analogo meter */}
                     <div className="anolog-main">
                         <h2 className="analog-main-text">Digital & Analog Meter</h2>
                     </div>
                     <div className="analog-main-body">
-                       <div className="analog-grid-body">
-                        <img src={meterlogo} className="analog-image-main"/>
-                       </div>
+                        <div className="analog-grid-body">
+                            <img src={meterlogo} className="analog-image-main" />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -33,19 +33,18 @@ const PvcPipes = () => {
                     <div className="pvcpipes-scroll">
                         <h2 className="led-logo-text-span"> <img src={logoone} className="led-logo" />Our <span className="led-logo-span">Customers</span> </h2>
                     </div>
-                    <div className="marquee-container">
-                        <Marquee>
-                            <img src={pvcpipeslogo1} className="pvcpipes-marquee-logo" />
-                            <img src={pvcpipeslogo2} className="pvcpipes-marquee-logo" />
-                            <img src={pvcpipeslogo3} className="pvcpipes-marquee-logo" />
-                            <img src={pvcpipeslogo4} className="pvcpipes-marquee-logo" />
-                            <img src={pvcpipeslogo5} className="pvcpipes-marquee-logo" />
-                            <img src={pvcpipeslogo6} className="pvcpipes-marquee-logo" />
-                            <img src={pvcpipeslogo7} className="pvcpipes-marquee-logo" />
-                            <img src={pvcpipeslogo8} className="pvcpipes-marquee-logo" />
-                            <img src={pvcpipeslogo9} className="pvcpipes-marquee-logo" />
-                        </Marquee>
+                    <div className="product-marquee">
+                    <div class="marquee marquee--8">
+                        <img class="marquee__item" src={pvcpipeslogo1} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={pvcpipeslogo2} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={pvcpipeslogo3} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={pvcpipeslogo4} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={pvcpipeslogo5} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={pvcpipeslogo6} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={pvcpipeslogo7} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={pvcpipeslogo8} width="100" height="100" alt="" />
                     </div>
+                </div>
                 </div>
                 <div className="wires-container">
                     <h2 className="wires-title">

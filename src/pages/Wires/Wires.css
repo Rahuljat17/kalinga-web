@@ -178,7 +178,16 @@
 .wirepage-items-text {
   font-size: 20px;
 }
-
+.product-marquee{
+  padding: 0px 110px;
+  .marquee {
+    height: 130px;
+  }
+  .marquee img{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
 @media screen and (max-width: 768px) {
   .background-container-wires {
     height: max-content;
@@ -206,6 +215,9 @@
 
   .wiresproducts-list li {
     font-size: 14px;
+  }
+  .product-marquee{
+    padding: 0px 20px;
   }
 
 }

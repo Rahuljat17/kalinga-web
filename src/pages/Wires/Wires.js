@@ -58,18 +58,21 @@ const Wirespage = () => {
                         Our <span className="wirespage-custo-span">Customers</span>
                     </h3>
                 </div>
-                <div className="wirespage-container">
+                <div className="product-marquee">
+                    <div class="marquee marquee--8">
+                        <img class="marquee__item" src={slide1} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={slide2} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={slide3} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={slide4} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={slide5} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={slide6} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={slide7} width="100" height="100" alt="" />
+                        <img class="marquee__item" src={slide8} width="100" height="100" alt="" />
+                    </div>
+                </div>
+                {/* <div className="wirespage-container">
                     <div className="left-side-text">
                     </div>
-                    {/* <div className="wirespage-marquee">
-                        <div className="marquee-content">
-                            {images.map((image, index) => (
-                                <div className="marquee-item" key={index}>
-                                    <img src={image} alt={`slide-${index}`} />
-                                </div>
-                            ))}
-                        </div>
-                    </div> */}
                     <div className="wirespage-container">
                         <div className="text-marquee">
                             <div className="scrolling-text">
@@ -86,7 +89,7 @@ const Wirespage = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className="wiresproducts-container">
                 <h2><img src={wirelogo} className="wirelogo-table" /><span className="highlight">Our</span> Products</h2>

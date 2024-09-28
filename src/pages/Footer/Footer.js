@@ -23,13 +23,14 @@ const Footer = () => {
                             <img src={kalinglogo} className="footer-main-logo" />
                             <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "flex-start", gap: "10px" }}>
                                 <div><img src={locationlogot} className="footer-logo-location" /></div>
-                                <h3 style={{ fontSize: "15px", }} className="footer-title">L-1, Shiv Shakti Plaza, Mahavir Encave,<br />Dwarka Sector- 1, New Delhi- 110045</h3>
+                                <h3 style={{ fontSize: "15px", }} className="footer-title">Kalinga Cables and Conduit Co. Sector 29<br />Village Jatjoshi, Delhi-Sonipat road, chowk,<br />near Bahalgarh, Sonipat, Haryana 131001</h3>
                             </div>
                         </div>
                         {/*  */}
                         <div>
                             <h3 className="footer-connect-maintitle">Connect with us</h3>
-                            <h3 className="footer-connect-withus"> <span><FiPhone fontSize={20} className="foot-connect-logo" /></span> +91 99603 03633</h3>
+                            <h3 className="footer-connect-withus"> <span><FiPhone fontSize={20} className="foot-connect-logo" /></span> +91 11-43090506</h3>
+                            <h3 className="footer-connect-withus"> <span><FiPhone fontSize={20} className="foot-connect-logo" /></span> +91 11-45564460</h3>
                             <h3 className="footer-connect-withus"><span><IoMailOutline fontSize={20} className="foot-connect-logo" /></span> kalingacables2004@gmail.com</h3>
                         </div>
                         {/*  */}

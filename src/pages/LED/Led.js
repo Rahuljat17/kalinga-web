@@ -49,13 +49,16 @@ const Led = () => {
                             {/* <img src={ledlogo} className="led-logo"/> */}
                             <h2 className="led-logo-text-span"> <img src={ledlogo} className="led-logo" />Our <span className="led-logo-span">Customers</span> </h2>
                         </div>
-                        <div>
-                            <div className="marquee-container-led">
-                                <div className="marquee-ledpage">
-                                    {images.map((src, index) => (
-                                        <img key={index} src={src} alt={`Image ${index + 1}`} />
-                                    ))}
-                                </div>
+                        <div className="product-marquee">
+                            <div class="marquee marquee--8">
+                                <img class="marquee__item" src={mrlogo1} width="100" height="100" alt="" />
+                                <img class="marquee__item" src={mrlogo2} width="100" height="100" alt="" />
+                                <img class="marquee__item" src={mrlogo3} width="100" height="100" alt="" />
+                                <img class="marquee__item" src={mrlogo4} width="100" height="100" alt="" />
+                                <img class="marquee__item" src={mrlogo5} width="100" height="100" alt="" />
+                                <img class="marquee__item" src={mrlogo6} width="100" height="100" alt="" />
+                                <img class="marquee__item" src={mrlogo7} width="100" height="100" alt="" />
+                                <img class="marquee__item" src={mrlogo8} width="100" height="100" alt="" />
                             </div>
                         </div>
                         {/* table */}
