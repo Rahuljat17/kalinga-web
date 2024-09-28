@@ -58,14 +58,22 @@ export default function BasicTabs() {
   return (
     <div className='container'>
       <Box sx={{ width: '100%' }}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered indicatorColor="secondary" >
-            <Tab label="Kalinga Cables & Conduit Company" {...a11yProps(0)} />
-            <Tab label="Kalinga Cable Company" {...a11yProps(1)} />
-            <Tab label="Kalinga Hotels & Resorts" {...a11yProps(2)} />
-            <Tab label="Sahni Strips" {...a11yProps(3)} />
-          </Tabs>
-        </Box>
+      <Box sx={{ borderBottom: 0, borderColor: '#C50568' }}>
+  <Tabs
+    value={value}
+    onChange={handleChange}
+    aria-label="basic tabs example"
+    centered
+    indicatorColor="secondary"
+    textColor="black" // Optional: ensures text color stays black
+  >
+    <Tab label="Kalinga Cables & Conduit Company" sx={{ color: 'black' }} {...a11yProps(0)} />
+    <Tab label="Kalinga Cable Company" sx={{ color: 'black' }} {...a11yProps(1)} />
+    <Tab label="Kalinga Hotels & Resorts" sx={{ color: 'black' }} {...a11yProps(2)} />
+    <Tab label="Sahni Strips" sx={{ color: 'black' }} {...a11yProps(3)} />
+  </Tabs>
+</Box>
+
         <CustomTabPanel value={value} index={0}>
           <div className='our-network'>
             <img src={Networkimage3} className='img-lg' />

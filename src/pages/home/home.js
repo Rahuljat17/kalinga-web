@@ -37,7 +37,9 @@ const Home = () => {
     { id: 4, image: productfive, text: 'Lighting' },
     { id: 5, image: productone, text: 'Other products' },
   ];
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(65);
+  const [Skilled, setSkilled] = useState(650);
+  const [licenses, setlicenses] = useState(8);
 
   return (
     <div>
@@ -89,12 +91,12 @@ const Home = () => {
             <h3 className='expertise-last-title'>Years of expertise</h3>
           </div>
           <div className='expertise-card'>
-            <h2 className='expertise-title'>{count} <span><AiOutlinePlus style={{ position: "relative", top: "5px", fontSize: "45px" }} className='expertise-logo-icon' /></span></h2>
+            <h2 className='expertise-title'>{Skilled} <span><AiOutlinePlus style={{ position: "relative", top: "5px", fontSize: "45px" }} className='expertise-logo-icon' /></span></h2>
             <img src={mechanic} className='expertise-logos' />
             <h3 className='expertise-last-title'>Skilled professionals</h3>
           </div>
           <div className='expertise-card'>
-            <h2 className='expertise-title'>{count} <span><AiOutlinePlus style={{ position: "relative", top: "5px", fontSize: "45px" }} className='expertise-logo-icon' /></span></h2>
+            <h2 className='expertise-title'>{licenses} <span><AiOutlinePlus style={{ position: "relative", top: "5px", fontSize: "45px" }} className='expertise-logo-icon' /></span></h2>
             <img src={pageslogo} className='expertise-logos' />
             <h3 className='expertise-last-title'>IBS licenced obtained</h3>
           </div>
@@ -156,12 +158,12 @@ const Home = () => {
           <div className="vertical-line"></div>
           <div className='ourunits-location'>
             <MdLocationPin color='red' fontSize={24} className='bounce-icon' />
-            <h3 className='ourunits-title'>Udhyog Nagar, New Delhi</h3>
+            <h3 className='ourunits-title'>Sonepat, Haryana</h3>
           </div>
           <div className="vertical-line"></div>
           <div className='ourunits-location'>
             <MdLocationPin color='red' fontSize={24} className='bounce-icon' />
-            <h3 className='ourunits-title'>Udhyog Nagar, New Delhi</h3>
+            <h3 className='ourunits-title'>Barota, Haryana</h3>
           </div>
         </div>
       </div>
