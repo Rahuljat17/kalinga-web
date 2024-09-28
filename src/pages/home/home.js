@@ -115,7 +115,7 @@ const Home = () => {
             <h3 className='certified-imagetext'>We are <span className='certified-imagespan'>Recognised and Certified</span></h3>
           </div>
           <div>
-            <Link to="/our-certification" style={{ textDecoration: "none" }}>View All <span><MdOutlineKeyboardDoubleArrowRight fontSize={20} /></span> </Link>
+            <Link to="/our-certification" style={{ textDecoration: "none", fontSize: "11px", display: "flex", alignItems: "center", marginTop: "30px" }}>View All <span><MdOutlineKeyboardDoubleArrowRight fontSize={20} /></span> </Link>
           </div>
         </div>
         <div className='certified-table-main'>

@@ -11,6 +11,11 @@ import Pic3 from "../../Accets/Frame 62.png";
 import Pic4 from "../../Accets/Frame 63.png";
 import Historypic1 from "../../Accets/historypic1.png";
 import Historypic2 from "../../Accets/historypic2.png";
+import Historypic3 from "../../Accets/1960.png";
+import Historypic4 from "../../Accets/1972.png";
+import Historypic5 from "../../Accets/1992.png";
+import Historypic6 from "../../Accets/1999.png";
+import Historypic7 from "../../Accets/2019.png";
 
 // Array for team members
 const teamMembers = [
@@ -49,29 +54,6 @@ const AboutUs = () => {
       </div>
       <div className='ourTeams'>
         <h2><img src={HeadingIcon} alt="Heading Icon" /><span>Our</span><span>Timeline</span></h2>
-        </div>
-      <div className='history'>
-        <div class="timeline">
-          <div class="timeline-event">
-            <div class="event-date">1947</div>
-            <div class="event-icon">
-              <img src={Historypic1} alt="Shri Bal Raj Sethi" />
-            </div>
-            <div class="event-description">Shri Bal Raj Sethi immigrates from Pindigheb.</div>
-          </div>
-          <div class="timeline-event">
-            <div class="event-date">1949</div>
-            <div class="event-icon">
-              <img src={Historypic2} alt="Royal Indian Navy Logo" />
-            </div>
-            <div class="event-description">Shri Bal Raj Sethi joins the Royal Indian Navy.</div>
-          </div>
-          <div class="timeline-event">
-            <div class="event-date">1959</div>
-            <div class="event-icon"></div>
-            <div class="event-description">After serving the Royal Indian Navy, settles in New Delhi with his budding family.</div>
-          </div>
-        </div>
       </div>
       <div className='history'>
         <div class="timeline">
@@ -99,23 +81,93 @@ const AboutUs = () => {
       <div className='history'>
         <div class="timeline">
           <div class="timeline-event">
-            <div class="event-date">1947</div>
+            <div class="event-date">1960</div>
             <div class="event-icon">
-              <img src={Historypic1} alt="Shri Bal Raj Sethi" />
+              <img src={Historypic3} alt="Shri Bal Raj Sethi" />
             </div>
-            <div class="event-description">Shri Bal Raj Sethi immigrates from Pindigheb.</div>
+            <div class="event-description">Recognizes an opportunity in electrical trade and opens a retail outlet trading in all electrical goods.</div>
           </div>
           <div class="timeline-event">
-            <div class="event-date">1949</div>
+            <div class="event-date">1965</div>
             <div class="event-icon">
-              <img src={Historypic2} alt="Royal Indian Navy Logo" />
             </div>
-            <div class="event-description">Shri Bal Raj Sethi joins the Royal Indian Navy.</div>
+            <div class="event-description">The trading outlet gains popularity due to immense hard work and fair pricing.<br /><br />The landmark shop is now recognized as Kalinga Chowk.</div>
           </div>
           <div class="timeline-event">
-            <div class="event-date">1959</div>
-            <div class="event-icon"></div>
-            <div class="event-description">After serving the Royal Indian Navy, settles in New Delhi with his budding family.</div>
+            <div class="event-date">1972</div>
+            <div class="event-icon">
+              <img src={Historypic4} alt="Royal Indian Navy Logo" />
+            </div>
+            <div class="event-description">The second generation (Shri Sudhir Sethi & Shri Rajiv Sethi) initiate Kalinga’s first manufacturing facility for residential wires. </div>
+          </div>
+        </div>
+      </div>
+      <div className='history'>
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="event-date">1985</div>
+            <div class="event-icon">
+            </div>
+            <div class="event-description">Now a total of 3 manufacturing facilities.</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">1991</div>
+            <div class="event-icon">
+            </div>
+            <div class="event-description">Acquisition of Sahni Strips Pvt. Ltd.</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">1992</div>
+            <div class="event-icon">
+              <img src={Historypic5} alt="Shri Bal Raj Sethi" />
+            </div>
+            <div class="event-description">Diversified into the hospitality business industry.</div>
+          </div>
+        </div>
+      </div>
+      <div className='history'>
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="event-date">1999</div>
+            <div class="event-icon">
+              <img src={Historypic6} alt="Shri Bal Raj Sethi" />
+            </div>
+            <div class="event-description">Receives a prestigious order from World Bank clocking in a ₹50 crore turnover after the third generation (Shri Atul Sethi joins hands in the family business) </div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">2004</div>
+            <div class="event-icon">
+            </div>
+            <div class="event-description">Establishment of Kalinga Cables & Conduit company while adding several new products & their offerings. </div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">2008</div>
+            <div class="event-icon">
+            </div>
+            <div class="event-description">Establishment a new manufacturing facility in Baddi, Himachal Pradesh along with Shri Kunal Sethi joining the family business.</div>
+          </div>
+        </div>
+      </div>
+      <div className='history'>
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="event-date">2014</div>
+            <div class="event-icon">
+            </div>
+            <div class="event-description">Acquires a sizable land parcel in Shahpur, Rajasthan for further expansion.</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">2019</div>
+            <div class="event-icon">
+              <img src={Historypic7} alt="Shri Bal Raj Sethi" />
+            </div>
+            <div class="event-description">The company becomes synonymous with safety, security & saving in India.<br /><br />The company diversify their hospitality, electrical harness endeavours.</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">2024</div>
+            <div class="event-icon">
+            </div>
+            <div class="event-description">Lay foundation for manufacturing of HT cables with targets of supplying power cables upto 33kV.</div>
           </div>
         </div>
       </div>

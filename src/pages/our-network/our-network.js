@@ -58,21 +58,21 @@ export default function BasicTabs() {
   return (
     <div className='container'>
       <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 0, borderColor: '#C50568' }}>
-  <Tabs
-    value={value}
-    onChange={handleChange}
-    aria-label="basic tabs example"
-    centered
-    indicatorColor="secondary"
-    textColor="black" // Optional: ensures text color stays black
-  >
-    <Tab label="Kalinga Cables & Conduit Company" sx={{ color: 'black' }} {...a11yProps(0)} />
-    <Tab label="Kalinga Cable Company" sx={{ color: 'black' }} {...a11yProps(1)} />
-    <Tab label="Kalinga Hotels & Resorts" sx={{ color: 'black' }} {...a11yProps(2)} />
-    <Tab label="Sahni Strips" sx={{ color: 'black' }} {...a11yProps(3)} />
-  </Tabs>
-</Box>
+        <Box sx={{ borderBottom: 0, borderColor: '#C50568' }}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="basic tabs example"
+            centered
+            indicatorColor="secondary"
+            textColor="black" // Optional: ensures text color stays black
+          >
+            <Tab label="Kalinga Cables & Conduit Company" sx={{ color: 'black' }} {...a11yProps(0)} />
+            <Tab label="Kalinga Cable Company" sx={{ color: 'black' }} {...a11yProps(1)} />
+            <Tab label="Kalinga Hotels & Resorts" sx={{ color: 'black' }} {...a11yProps(2)} />
+            <Tab label="Sahni Strips" sx={{ color: 'black' }} {...a11yProps(3)} />
+          </Tabs>
+        </Box>
 
         <CustomTabPanel value={value} index={0}>
           <div className='our-network'>
@@ -86,7 +86,7 @@ export default function BasicTabs() {
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
-        <div className='our-network'>
+          <div className='our-network'>
             <img src={Networkimage4} className='img-lg' />
             <div className='img-sm'>
               <img src={Networkimage5} />
@@ -97,7 +97,7 @@ export default function BasicTabs() {
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
-        <div className='our-network'>
+          <div className='our-network'>
             <img src={Networkimage7} className='img-lg' />
             <div className='img-sm'>
               <img src={Networkimage8} />
@@ -105,10 +105,20 @@ export default function BasicTabs() {
             </div>
             <h3>Kalinga Hotels & Resorts</h3>
             <p>Kalinga Hotels & Resorts offers a luxurious getaway in the serene landscapes of Manali, with a range of premium villas and cottages that blend modern comfort with natural beauty. Whether you're seeking a peaceful retreat or an adventurous mountain escape, our properties provide the perfect ambiance with elegant interiors, stunning views, and personalized services for a memorable stay.</p>
+            <p style={{textAlign: "left"}}>
+              Our properties consist of:
+              <ul>
+                <li>Hotel Kalinga Intercontinental (NH 21, Manali)</li>
+                <li>Hotel Kalinga Grand (Kanyal Road, Manali)</li>
+                <li>Royal Kalinga Cottages (Manali)</li>
+                <li>Kalinga Premium Villas (Manali)</li>
+                <li>Hotel Palm Grand (Naraina Vihar, New Delhi)"</li>
+              </ul>
+            </p>
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={3}>
-        <div className='our-network'>
+          <div className='our-network'>
             <img src={Networkimage10} className='img-lg' />
             <div className='img-sm'>
               <img src={Networkimage11} />
