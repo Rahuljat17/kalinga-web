@@ -27,13 +27,13 @@ export const LOGIN_STATUS = "LOGIN_STATUS";
 export const CREDIT_DETAILS = "CREDIT_DETAILS";
 export const CREDIT_DETAILSTWO = "CREDIT_DETAILSTWO";
 const firebaseConfig = {
-  apiKey: "AIzaSyD5Y7DuliYUUVBbsDS-U3X1j6ss2QINy9M",
-  authDomain: "whatsapp-bot-27a18.firebaseapp.com",
-  projectId: "whatsapp-bot-27a18",
-  storageBucket: "whatsapp-bot-27a18.appspot.com",
-  messagingSenderId: "950551023993",
-  appId: "1:950551023993:web:50a2ad19935b1013ef9fa8",
-  measurementId: "G-H8S7GP4RKY",
+  apiKey: "AIzaSyDeC6gz1Sgwqa-P6EnYIbX3JLy_bJAq70I",
+  authDomain: "kalinga-868f8.firebaseapp.com",
+  projectId: "kalinga-868f8",
+  storageBucket: "kalinga-868f8.appspot.com",
+  messagingSenderId: "293304017473",
+  appId: "1:293304017473:web:b24b8891465e328af35cc0",
+  measurementId: "G-Z6NH09CJRB"
 };
 export const app = initializeApp(firebaseConfig);
 // export const fb = firebase.initializeApp(firebaseConfig);
