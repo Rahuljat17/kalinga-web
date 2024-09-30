@@ -88,9 +88,9 @@ a{
 }
 .foot-logo-all {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* gap: 10px; */
 }
 .foot-logos {
   width: 30px;

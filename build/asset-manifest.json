@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d346d11.css",
-    "main.js": "/static/js/main.4bd6e5e9.js",
+    "main.css": "/static/css/main.d02e5dad.css",
+    "main.js": "/static/js/main.289af024.js",
     "static/js/787.d5197ce1.chunk.js": "/static/js/787.d5197ce1.chunk.js",
     "static/media/pvcpipes background.png": "/static/media/pvcpipes background.1c3ee40950a11f1d78a8.png",
     "static/media/led background.png": "/static/media/led background.060f84d805b40f2ae6b9.png",
@@ -66,16 +66,20 @@
     "static/media/slidei1.jpg": "/static/media/slidei1.d8ce3fe387080ba50306.jpg",
     "static/media/scroollogo2.png": "/static/media/scroollogo2.3985cd79824cc7a53c83.png",
     "static/media/slidei2.jpg": "/static/media/slidei2.2beb577fb38c6e35c00d.jpg",
+    "static/media/1992.png": "/static/media/1992.e3805059e0eb2e273cd3.png",
     "static/media/slidei4.jpg": "/static/media/slidei4.2c86a32166827f61a420.jpg",
+    "static/media/1972.png": "/static/media/1972.c7cb22b21ffdaaea8a53.png",
     "static/media/KalingaPremeumLogo.png": "/static/media/KalingaPremeumLogo.adc0c94847f073ac7277.png",
+    "static/media/2019.png": "/static/media/2019.d386f4907ae6240b7f6a.png",
+    "static/media/1960.png": "/static/media/1960.c130e21fff441d2dfe46.png",
     "static/media/instagram.png": "/static/media/instagram.3254e19fa0adfa7e3ac9.png",
     "index.html": "/index.html",
-    "main.9d346d11.css.map": "/static/css/main.9d346d11.css.map",
-    "main.4bd6e5e9.js.map": "/static/js/main.4bd6e5e9.js.map",
+    "main.d02e5dad.css.map": "/static/css/main.d02e5dad.css.map",
+    "main.289af024.js.map": "/static/js/main.289af024.js.map",
     "787.d5197ce1.chunk.js.map": "/static/js/787.d5197ce1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d346d11.css",
-    "static/js/main.4bd6e5e9.js"
+    "static/css/main.d02e5dad.css",
+    "static/js/main.289af024.js"
   ]
 }

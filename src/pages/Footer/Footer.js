@@ -67,8 +67,8 @@ const Footer = () => {
                             <div className="foot-logo-all">
                                 {/* <img src={inslogo} className="foot-logos" /> */}
                                 {/* <img src={twitterlogo} className="foot-logos" /> */}
-                                <a href="https://www.facebook.com/share/fbiqMUWD7fWusdsp/?mibextid=LQQJ4d"><img src={fblogo} className="foot-logos" /></a>
-                                <a href="mailto:kalingacables2004@gmail.com"><img src="https://i.pinimg.com/originals/88/e1/4c/88e14cc7e7fcbb0e0e09de26cec86c61.png" className="foot-logos" /></a>
+                                <a href="https://www.facebook.com/share/fbiqMUWD7fWusdsp/?mibextid=LQQJ4d" target="_blank" ><img src={fblogo} className="foot-logos" /></a>
+                                {/* <a href="mailto:kalingacables2004@gmail.com" target="_blank"><img src="https://i.pinimg.com/originals/88/e1/4c/88e14cc7e7fcbb0e0e09de26cec86c61.png" className="foot-logos" /></a> */}
                             </div>
                         </div>
                     </div>
