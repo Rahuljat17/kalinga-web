@@ -50,7 +50,7 @@ pipeline {
 
                     // Using lftp to upload files
                     sh """
-                    lftp -c "
+                    /usr/bin/lftp -c "
                     open ftp://$ftpUser:$ftpPass@$ftpServer
                     lcd build
                     cd $remoteDir
