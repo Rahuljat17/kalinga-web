@@ -1,5 +1,5 @@
 pipeline {
-	agent any
+	agent { label 'hrms' }
 	stages {
         stage('Install NVM and Node.js') {
             steps {
@@ -29,6 +29,8 @@ pipeline {
                 export NVM_DIR="$HOME/.nvm"
                 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
                 nvm use node
+                # Update caniuse-lite
+                npx update-browserslist-db@latest
                 npm install --legacy-peer-deps
                 npm run build 
                 '''
