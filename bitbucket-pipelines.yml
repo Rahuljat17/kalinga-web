@@ -1,0 +1,18 @@
+image: node:21
+
+pipelines:
+  default:
+    - step:
+        name: Deploy to cPanel via SSH
+        caches:
+          - node
+        script:
+          # Install rsync for file transfer
+          - apt-get update && apt-get install rsync
+          
+          # Build the project (for React/Firebase projects)
+          - npm install
+          - npm run build
+          
+          # Use rsync to deploy the build folder via SSH
+          - rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./build/ $kalin@$43.239.110.108:/home/$CPANEL_USER/public_html/
