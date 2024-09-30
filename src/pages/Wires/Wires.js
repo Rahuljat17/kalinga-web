@@ -41,7 +41,7 @@ const Wirespage = () => {
         "Fire Survival Wire",
         "3 Core Submersible Cable",
         "Telephone Cable As Per Itd S/ws- 113c & S/ws- 114c",
-        "T.v. Coaxial Cables & Cctv Cables",
+        "T.v. Coaxial Cables & CCTV Cables",
         "Computer Cable  For Networking & Dsl Wiring",
         "DC UV Resistant Wire"
     ];

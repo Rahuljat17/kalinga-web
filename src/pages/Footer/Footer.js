@@ -36,10 +36,10 @@ const Footer = () => {
                         {/*  */}
                         <div className="foot-netwoek-main">
                             <h3 className="foot-our-network">Our Network</h3>
-                            <h3 className="foot-network-menu">Kalinga Cables and Conduit</h3>
+                            <h3 className="foot-network-menu">Kalinga Cables and Conduit Company</h3>
                             <h3 className="foot-network-menu">Kalinga Cables</h3>
                             <h3 className="foot-network-menu">Kalinga Hotels and Resorts</h3>
-                            <h3 className="foot-network-menu">Sahni Strips</h3>
+                            <h3 className="foot-network-menu">Sahni Strips Pvt Ltd</h3>
                         </div>
                         {/*  */}
                         <div className="foot-getintouch-main">
