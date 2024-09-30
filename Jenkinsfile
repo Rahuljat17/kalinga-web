@@ -1,42 +1,26 @@
 pipeline {
 	agent any
 	stages {
-		stage ("pull code from git repo"){
+		stage ("Build"){
 			steps{
-                git branch: 'main', credentialsId: 'jenkins', url: 'git@bitbucket.org:hypersagetechnology/alphatech-user-admin-panel.git'
+			    // Checkout code
+                git branch: 'main', credentialsId: 'jenkins', url: 'git@bitbucket.org:hypersagetechnology/kalinga-web.git'
+				
+				// Install dependencies and build project
+                sh 'npm install'
+                sh 'npm run build'
 			}
 		}
-        stage('Remove Old Containers and Images') {
+        stage('Deploy') {
             steps {
-                script {
+                // Use SSH private key for deployment
+                sshagent(['cPanel-ssh-key']) {
                     sh '''
-                    sudo docker stop alphatech || true
-                    sudo docker rm alphatech || true
-                    '''
-                    sh '''
-                    sudo docker rmi rahul9664/alphatech:latest || true
+                    # Deploy using rsync over SSH
+                    rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./build/ $kalin@$43.239.110.108:/home/$CPANEL_USER/public_html/
                     '''
                 }
             }
         }
-
-		stage ("Building docker image"){
-			steps{
-				sh 'sudo docker build -t rahul9664/alphatech:latest .'
-			}
-		}
-		stage ("Push on Docker-Hub"){
-			steps{
-				withCredentials([string(credentialsId: 'docker_hub', variable: 'docker_passwd')]) {
-    					sh 'sudo docker login -u rahul9664 -p ${docker_passwd}'
-					sh 'sudo docker push rahul9664/alphatech'
-				}
-			}
-		}
-		stage ("Testing the Build"){
-			steps{
-				sh 'sudo docker run -dit --name alphatech -p 3007:3007 rahul9664/alphatech:latest'
-			}
-		}
 	}
 }
