@@ -30,7 +30,7 @@ pipeline {
                 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
                 nvm use node
                 # Update caniuse-lite
-                npx update-browserslist-db@latest --legacy-peer-deps
+                npm install caniuse-lite --legacy-peer-deps
                 npm install --legacy-peer-deps
                 npm run build 
                 '''
