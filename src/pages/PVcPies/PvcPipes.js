@@ -55,27 +55,28 @@ const PvcPipes = () => {
                     </h2>
                     <div className="wires-table">
                         <div className="table-section">
-                            <h3 className="section-title">RIGID P.V.C CONDUIT</h3>
+                            <h3 className="section-title">Rigid PVC Conduit</h3>
                             <table>
                                 <thead>
                                     <tr>
                                         <th>Size</th>
-                                        <th>Standard Packing</th>
+                                        <th style={{textAlign: "end"}}>Standard Packing</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {data.map((item, index) => (
                                         <tr key={index}>
                                             <td>{item.size}</td>
-                                            <td>{item.standardPacking}</td>
+                                            <td style={{textAlign: "end"}}>{item.standardPacking}</td>
                                         </tr>
                                     ))}
                                 </tbody>
                             </table>
                         </div>
                         <div className="table-section">
-                            <h3 className="section-title">LONG BEND</h3>
-                            <table>
+                            <h3 className="section-title">Long Bend</h3>
+                            <p><b>NOTE</b>-Available in all sizes. Standard packing size is 12 pieces in heavy and medium quality.</p>
+                            {/* <table>
                                 <thead>
                                     <tr>
                                         <th>Medium Per Doz</th>
@@ -90,13 +91,14 @@ const PvcPipes = () => {
                                         </tr>
                                     ))}
                                 </tbody>
-                            </table>
+                            </table> */}
                         </div>
                     </div>
                 </div>
                 {/*  */}
                 <div className="casing-capping-container">
-                    <h2 className="casing-title"><img src={logoone} className="casing-imagelogo" /> Casing & Capping  <span className="details-text-casing">Details</span></h2>
+                    {/* <h2 className="casing-title"><img src={logoone} className="casing-imagelogo" /> Casing & Capping  <span className="details-text-casing">Details</span></h2> */}
+                    <h3 className="section-title">Casing and Capping</h3>
                     <table className="details-table">
                         <thead>
                             <tr>

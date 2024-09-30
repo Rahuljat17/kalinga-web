@@ -44,6 +44,7 @@ const Footer = () => {
                         {/*  */}
                         <div className="foot-getintouch-main">
                             <h3 className="foot-getintouch-title">Get in touch</h3>
+                            <a href="https://wa.me/918285642264" target="_blank">
                             <Button
                                 variant="contained"
                                 startIcon={<WhatsApp />}
@@ -61,13 +62,13 @@ const Footer = () => {
                             >
                                 Contact us
                             </Button>
+                            </a>
                             <h3 className="foot-contactus-today">Contact with us today</h3>
                             <div className="foot-logo-all">
-                                <img src={inslogo} className="foot-logos" />
-                                <img src={twitterlogo} className="foot-logos" />
-                                <img src={fblogo} className="foot-logos" />
-                                <img src={linkdinlogo} className="foot-logos" />
-
+                                {/* <img src={inslogo} className="foot-logos" /> */}
+                                {/* <img src={twitterlogo} className="foot-logos" /> */}
+                                <a href="https://www.facebook.com/share/fbiqMUWD7fWusdsp/?mibextid=LQQJ4d"><img src={fblogo} className="foot-logos" /></a>
+                                <a href="mailto:kalingacables2004@gmail.com"><img src="https://i.pinimg.com/originals/88/e1/4c/88e14cc7e7fcbb0e0e09de26cec86c61.png" className="foot-logos" /></a>
                             </div>
                         </div>
                     </div>

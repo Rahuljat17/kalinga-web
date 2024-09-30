@@ -1,5 +1,7 @@
 /** @format */
-
+a{
+  text-decoration: none;
+}
 .footer-logo-location {
   width: 25px;
   height: 25px;
@@ -87,12 +89,13 @@
 .foot-logo-all {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 10px;
 }
 .foot-logos {
   width: 30px;
   height: 30px;
+  border-radius: 5px;
   object-fit: cover;
 }
 .foot-getintouch-main {

@@ -31,11 +31,11 @@ import Imageslider from '../Imageslider/Imageslider';
 
 const Home = () => {
   const cards = [
-    { id: 1, image: productwo, text: 'Wires' },
-    { id: 2, image: producthree, text: 'Cables' },
-    { id: 3, image: productfour, text: 'PVC Pipes' },
-    { id: 4, image: productfive, text: 'Lighting' },
-    { id: 5, image: productone, text: 'Other products' },
+    { id: 1, image: productwo, text: 'Wires', redirect: '/wires' },
+    { id: 2, image: producthree, text: 'Cables', redirect: '/cables' },
+    { id: 3, image: productfour, text: 'PVC Pipes', redirect: '/pvc-pipes' },
+    { id: 4, image: productfive, text: 'Lighting', redirect: '/lighting' },
+    { id: 5, image: productone, text: 'Other products', redirect: '/others' },
   ];
   const [count, setCount] = useState(65);
   const [Skilled, setSkilled] = useState(650);
@@ -75,10 +75,12 @@ const Home = () => {
         </div>
         <div className="card-grid">
           {cards.map((card) => (
-            <div key={card.id} className="card">
-              <img src={card.image} alt={card.text} className="card-image" />
-              <p className="card-text">{card.text}</p>
-            </div>
+            <Link to={card.redirect}>
+              <div key={card.id} className="card">
+                <img src={card.image} alt={card.text} className="card-image" />
+                <p className="card-text">{card.text}</p>
+              </div>
+            </Link>
           ))}
         </div>
         {/*  */}

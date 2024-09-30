@@ -5,13 +5,23 @@
     display: flex;
     justify-content: center;
     iframe{
-        width: 45% !important;
+        width: 35% !important;
     }
     video{
         border-radius: 50%;
     }
+    .contact-form{
+        display: flex;
+        gap: 10px;
+        .querybox{
+            margin-top: 15px;
+            TextField{
+                padding-bottom: 20px !important;
+            }
+        }
+    }
     .contents{
-        max-width: 500px;
+        max-width: 600px;
         margin-left: 20px;
         h2{
             display: flex;
@@ -23,9 +33,12 @@
                 color: #C50568;
             }
         }
+        .input-fields{
+            width: 400px;
+        }
         .text-fields{
             width: 100% !important;
-            margin: 15px 0px;
+            margin: 13px 0px;
         }
         Button{
             margin-top: 20px;
@@ -50,6 +63,17 @@
         }
         .contents{
             margin-left: 0px;
+            .input-fields {
+                width: 100%;
+            }
+        }
+        .contact-form{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            .querybox{
+                margin-top: 15px;
+            }
         }
     }
 }

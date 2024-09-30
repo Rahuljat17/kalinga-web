@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './about-us.css';
-import { Dialog, DialogTitle, DialogContent, DialogActions, Button } from '@mui/material';
+import { Dialog, DialogTitle, DialogContent, DialogActions, TextField, Button, Grid, MenuItem, Select, InputLabel, FormControl, Typography, Box } from '@mui/material';
+import { UploadFile } from '@mui/icons-material';
 import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/material/IconButton';
 import MainVideo from "../../Accets/WhatsApp Video 2024-09-23 at 11.55.16 AM.mp4";
@@ -37,6 +38,31 @@ const AboutUs = () => {
   const handleClose = () => {
     setOpen(false);
     setSelectedMember(null); // Reset the selected member
+  };
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    location: 'India',
+    state: '',
+    city: '',
+    role: '',
+    file: null,
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleFileChange = (e) => {
+    setFormData({ ...formData, file: e.target.files[0] });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission
+    console.log(formData);
   };
 
   return (
@@ -185,6 +211,138 @@ const AboutUs = () => {
           ))}
         </div>
       </div>
+      {/* join our team */}
+      <div className='ourTeams'>
+        <h2><img src={HeadingIcon} alt="Heading Icon" /><span>Join Our</span><span>Team</span></h2>
+      </div>
+      <Box component="form" noValidate onSubmit={handleSubmit} sx={{ p: 4 }}>
+        <Grid container sx={{ display: "flex !important", justifyContent: "space-between" }}>
+          <Grid container spacing={2} sx={{ mt: 2 }} md={9}>
+            <Grid item xs={12} md={6}>
+              <TextField
+                fullWidth
+                label="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <FormControl fullWidth>
+                <InputLabel>Location</InputLabel>
+                <Select
+                  name="location"
+                  value={formData.location}
+                  onChange={handleChange}
+                >
+                  <MenuItem value="India">India</MenuItem>
+                  {/* Add other countries as needed */}
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <TextField
+                fullWidth
+                label="Email address"
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Grid container spacing={1}>
+                <Grid item xs={3}>
+                  <TextField
+                    disabled
+                    value="+91"
+                    fullWidth
+                    label="Code"
+                  />
+                </Grid>
+                <Grid item xs={9}>
+                  <TextField
+                    fullWidth
+                    label="Phone number"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                  />
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <FormControl fullWidth>
+                <InputLabel>State</InputLabel>
+                <Select
+                  name="state"
+                  value={formData.state}
+                  onChange={handleChange}
+                >
+                  {/* Add state options */}
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <FormControl fullWidth>
+                <InputLabel>City</InputLabel>
+                <Select
+                  name="city"
+                  value={formData.city}
+                  onChange={handleChange}
+                >
+                  {/* Add city options */}
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <FormControl fullWidth>
+                <InputLabel>Role</InputLabel>
+                <Select
+                  name="role"
+                  value={formData.role}
+                  onChange={handleChange}
+                >
+                  {/* Add role options */}
+                </Select>
+              </FormControl>
+            </Grid>
+          </Grid>
+
+          <Grid item xs={12} md={2}>
+            <Box
+              sx={{
+                border: '1px dashed gray',
+                p: 2,
+                textAlign: 'center',
+                borderRadius: 2,
+                cursor: 'pointer',
+                height: "76%",
+                marginTop: "20px",
+                marginBottom: "20px"
+              }}
+              onClick={() => document.getElementById('fileInput').click()}
+            >
+              <UploadFile fontSize="large" />
+              <Typography>Upload resume</Typography>
+              <Typography variant="caption">PDF, JPG, PNG up to 2mb</Typography>
+              <input
+                type="file"
+                id="fileInput"
+                accept=".pdf,.jpg,.png"
+                onChange={handleFileChange}
+                style={{ display: 'none' }}
+              />
+            </Box>
+          </Grid>
+        </Grid><br />
+        <Button variant="contained" size="large" className='contact_btn' style={{ backgroundColor: "#1E2D4D", padding: "11px 30px", marginTop: "10px", borderRadius: "10px", textTransform: "none" }} type="submit">
+          Submit
+        </Button>
+      </Box>
 
       {/* MUI Dialog for showing member details */}
       <Dialog open={open} onClose={handleClose} fullWidth maxWidth="sm">

@@ -91,6 +91,7 @@
 .wires-table {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
   margin-top: 20px;
 }
