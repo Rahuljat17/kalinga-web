@@ -24,15 +24,25 @@ pipeline {
                 git branch: 'main', credentialsId: 'jenkins', url: 'git@bitbucket.org:hypersagetechnology/kalinga-web.git'
 				
 				// Install dependencies and build project
-                sh 'npm install'
-                sh 'npm run build'
+                // Load NVM in every stage that needs npm
+                sh '''
+                export NVM_DIR="$HOME/.nvm"
+                [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+                nvm use node
+                npm install
+                npm run build 
+                '''
 			}
 		}
         stage('Deploy') {
             steps {
                 // Use SSH private key for deployment
                 sshagent(['cPanel-ssh-key']) {
+                    // Load NVM in every stage that needs npm
                     sh '''
+                    export NVM_DIR="$HOME/.nvm"
+                    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+                    nvm use node
                     # Deploy using rsync over SSH
                     rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./build/ $kalin@$43.239.110.108:/home/$CPANEL_USER/public_html/
                     '''
