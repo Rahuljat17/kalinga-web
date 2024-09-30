@@ -46,7 +46,10 @@ const Led = () => {
                     <div className="led-customer-scrollbody">
                         <div className="led-customer-scroll">
                             {/* <img src={ledlogo} className="led-logo"/> */}
-                            <h2 className="led-logo-text-span"> <img src={ledlogo} className="led-logo" />Our <span className="led-logo-span">Customers</span> </h2>
+                            {/* <h2 className="led-logo-text-span"> <img src={ledlogo} className="led-logo" />Our <span className="led-logo-span">Customers</span> </h2> */}
+                            <h2 className="wires-title">
+                                <img src={ledlogo} className="wires-logo-image" />Our <span className="wires-span-text"> Customers</span>
+                            </h2>
                         </div>
                         <div className="product-marquee">
                             <div class="marquee marquee--8">
@@ -62,7 +65,10 @@ const Led = () => {
                         </div>
                         {/* table */}
                         <div className="products-container">
-                            <h1><span className="icon"><img src={ledlogo} className="led-logo" /></span> Our <span className="highlight">Products</span></h1>
+                            {/* <h1><span className="icon"><img src={ledlogo} className="led-logo" /></span> Our <span className="highlight">Products</span></h1> */}
+                            <h2 className="wires-title">
+                                <img src={ledlogo} className="wires-logo-image" />Our <span className="wires-span-text"> Customers</span>
+                            </h2>
                             <table className="products-table">
                                 <thead>
                                     <tr>

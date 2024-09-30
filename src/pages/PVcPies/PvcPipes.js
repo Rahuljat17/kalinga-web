@@ -31,7 +31,10 @@ const PvcPipes = () => {
                 </div>
                 <div>
                     <div className="pvcpipes-scroll">
-                        <h2 className="led-logo-text-span"> <img src={logoone} className="led-logo" />Our <span className="led-logo-span">Customers</span> </h2>
+                    <h2 className="wires-title">
+                        <img src={logoone} className="wires-logo-image" />Our <span className="wires-span-text"> Customers</span>
+                    </h2>
+                        {/* <h2 className="led-logo-text-span"> <img src={logoone} className="led-logo" />Our <span className="led-logo-span">Customers</span> </h2> */}
                     </div>
                     <div className="product-marquee">
                     <div class="marquee marquee--8">

@@ -146,4 +146,13 @@
             width: 45% !important;
         }
     }
+    .timeline {
+        width: 100%;
+        position: relative;
+        margin-top: 50px;
+    }
+    .timeline:before {
+        left: 17%; 
+        width: 66%;
+    }
 }

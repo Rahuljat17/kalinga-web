@@ -94,7 +94,7 @@ const AboutUs = () => {
             <div class="event-description">The trading outlet gains popularity due to immense hard work and fair pricing.<br /><br />The landmark shop is now recognized as Kalinga Chowk.</div>
           </div>
           <div class="timeline-event">
-            <div class="event-date">1972</div>
+            <div class="event-date">1975</div>
             <div class="event-icon">
               <img src={Historypic4} alt="Royal Indian Navy Logo" />
             </div>
@@ -111,17 +111,17 @@ const AboutUs = () => {
             <div class="event-description">Now a total of 3 manufacturing facilities.</div>
           </div>
           <div class="timeline-event">
-            <div class="event-date">1991</div>
-            <div class="event-icon">
-            </div>
-            <div class="event-description">Acquisition of Sahni Strips Pvt. Ltd.</div>
-          </div>
-          <div class="timeline-event">
             <div class="event-date">1992</div>
             <div class="event-icon">
               <img src={Historypic5} alt="Shri Bal Raj Sethi" />
             </div>
             <div class="event-description">Diversified into the hospitality business industry.</div>
+          </div>
+          <div class="timeline-event">
+            <div class="event-date">1998</div>
+            <div class="event-icon">
+            </div>
+            <div class="event-description">Acquisition of Sahni Strips Pvt. Ltd.</div>
           </div>
         </div>
       </div>

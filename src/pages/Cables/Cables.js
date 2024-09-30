@@ -20,26 +20,33 @@ import arrowlogoty from '../../Accets/arrow.png';
 
 const Cables = () => {
     const productscables = [
-        "PVC insulated Sheathed/ Unsheathed Single Core/ Multi Core Cables as per IS : 694/ 1990",
-        "KALINGA PREMIUM PVC INSULATED SINGLE/MULTICORE PVC SHEATHED CABLES CONFORMING TO IS 194- 1990",
-        "KALINGA PREMIUM COPPER CONDUCTOR PVC INSULATED UNSEATHERED FLEXIBLE WIRES & CORDS FOR PANELS & FLEXIBLE WIRING CONFORMING TO IS: 694-1990",
-        "KALINGA PREMIUM COPPER CONDUCTOR PVC INSULATED UNSEATHERED HOUSE & INDUSTRIAL WIRES CONFORMING TO IS: 694- 1990",
-        "KALINGA PREMIUM COPPER CONDUCTOR PVC INSULATED SINGLE/MULTICORE PVC SHEATHERED CABLES CONFORMING TO IS 694- 1990",
-        "KALINGA PREMIUM COPPER CONDUCTOR PVC INSULATED UNSEATHERED MULTISTRAND WIRES FOR HOUSE & INDUSTRIAL WIRING CONFORMING TO IS: 694- 1990",
-        "KALINGA PREMIUM COPPER CONDUCTOR PVC SEATHERED 3CORE SUBMERSIBLE FLAT WITH ANNEALED BEAR MULTISTANDED COPPER CONDUCTOR SUITABLE FOR 650/110 VOLTS",
-        "KALINGA PREMIUM PVC INSULATED AND PVC SHEATHED ARMORED/ UNARMORED SINGLE CORE/ MULTI CORE CABLES AS PER IS 1554 PART- 1)- 1988",
-        "KALINGA PREMIUM SINGLE CORE PVC INSULATED AND PVC SHEATHED ARMORED/ UNARMORED POWER CABLES WITH ALUMINIUM CONDUCTOR SUITABLE FOR 1100 VOLTS.",
-        "KALINGA PREMIUM TWO CORE PVC INSULATED AND PVC SHEATHED ARMORED/ UNARMORED POWER CABLES WITH ALUMINIUM COPPER CONDUCTOR SUITABLE FOR 1100 VOLTS.",
-        "KALINGA PREMIUM THREE CORE PVC INSULATED AND PVC SHEATHED ARMORED/ UNARMORED POWER CABLES WITH ALUMINIUM COPPER CONDUCTOR SUITABLE FOR 1100 VOLTS.",
-        "KALINGA PREMIUM THREE & HALF CORE PVC INSULATED AND PVC SHEATHED ARMORED/ UNARMORED POWER CABLES WITH ALUMINIUM COPPER CONDUCTOR SUITABLE FOR 1100 VOLTS.",
-        "KALINGA PREMIUM FOUR CORE PVC INSULATED AND PVC SHEATHED ARMORED/ UNARMORED POWER CABLES WITH ALUMINIUM COPPER CONDUCTOR SUITABLE FOR 1100 VOLTS.",
-        "KALINGA PREMIUM PVC INSULATED ARMORED/ UNARMORED WITH COPPER CONDUCTOR SUITABLE FOR 1100 VOLTS.",
-        "KALINGA PREMIUM 1.1 kV SINGLE CORE XPLE INSULATED UNARMORED AND ARMORED CABLES WITH ALUMINIUM/ COPPER CONDUCTOR TO IS 7098 (PART-1)- 1988",
-        "KALINGA PREMIUM 1.1 kV TWO CORE XPLE INSULATED UNARMORED AND ARMORED CABLES WITH ALUMINIUM/ COPPER CONDUCTOR TO IS 7098 (PART-1)- 1988",
-        "KALINGA PREMIUM 1.1 kV THREE CORE XPLE INSULATED UNARMORED AND ARMORED CABLES WITH ALUMINIUM/ COPPER CONDUCTOR TO IS 7098 (PART-1)- 1988",
-        "KALINGA PREMIUM 1.1 kV THREE & HALF CORE XPLE INSULATED UNARMORED AND ARMORED CABLES WITH ALUMINIUM/ COPPER CONDUCTOR TO IS 7098 (PART-1)- 1988",
-        "KALINGA PREMIUM 1.1 kV FOUR CORE XPLE INSULATED UNARMORED AND ARMORED CABLES WITH ALUMINIUM/ COPPER CONDUCTOR TO IS 7098 (PART-1)- 1988",
-        "KALINGA PREMIUM XPLE INSULATED UNARMORED/ ARMORED CABLES WITH COPPER CONDUCTOR TO IS 7098 (PART-1)- 1988",
+        {
+            heading: "Low Tension Power Cables",
+            subheadings: [
+                "Xlpe Insulated Power Cables as per IS 7098 (Copper/ Aluminum) (Armoured/ Unarmoured) 1.1Kv suitable",
+                "PVC Insulated Power Cables as per IS 1554 (Copper/ Aluminum) (Armoured/ Unarmoured) 1.1Kv suitable",
+                "Mining Cables as per Latest DGMS Standards (With Optional Double Armouring) 1.1Kv suitable",
+                "Fire Survival Cables 1.1Kv suitable"
+            ]
+        },
+        {
+            heading: "High Tension Power Cables",
+            subheadings: [
+                "Xlpe Insulated Power Cables as per IS 7098 (Copper/ Aluminum) (Armoured/ Unarmoured) Upto 33 Kv",
+                "PVC Insulated Power Cables as per IS 1554 (Copper/ Aluminum) (Armoured/ Unarmoured) Upto 33 Kv",
+                "Fire Survival Cables Upto 33 Kv"
+            ]
+        },
+        {
+            heading: "Control Cables",
+            subheadings: [
+                "Xlpe Insulated Control Cables as per IS 7098 Copper (Armoured/ Unarmoured)",
+                "PVC Insulated Control Cables as per IS 1554 Copper (Armoured/ Unarmoured)",
+                "Specialized Control Cables",
+                "Fire Retardant Low Smoke Control Cables",
+                "Fire Survival Control Cables"
+            ]
+        }
     ];
     const images = [
         // Array of image URLs
@@ -85,11 +92,20 @@ const Cables = () => {
             <div className="product-list">
                 <h2 className="product-heading"><img src={logoserv} className="cables-cuto-image-product" />Our <span className="cables-spantext">Products</span></h2>
                 <ul className="product-items">
-                    <h3 className="product-cable-text">items</h3>
                     {productscables.map((product, index) => (
-                        <li key={index} className="product-item">
-                            <span><img src={arrowlogoty} className="arrow-cable-li" /></span> {product}
-                        </li>
+                        <div>
+                            <li key={index} className="product-item">
+                                <span><img src={arrowlogoty} className="arrow-cable-li" /></span> {product.heading}
+
+                            </li>
+                            <ul style={{margin: "10px auto 25px"}}>
+                                {product.subheadings.map((subpoint, subIndex) => (
+                                    <li key={subIndex} className="product-subpoint">
+                                        {subpoint}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     ))}
                 </ul>
             </div>

@@ -115,7 +115,7 @@ const Home = () => {
             <h3 className='certified-imagetext'>We are <span className='certified-imagespan'>Recognised and Certified</span></h3>
           </div>
           <div>
-            <Link to="/our-certification" style={{ textDecoration: "none", fontSize: "11px", display: "flex", alignItems: "center", marginTop: "30px" }}>View All <span><MdOutlineKeyboardDoubleArrowRight fontSize={20} /></span> </Link>
+            <Link to="/our-certification" style={{ textDecoration: "none", fontSize: "9px", display: "flex", alignItems: "center", marginTop: "30px" }}>View All <span><MdOutlineKeyboardDoubleArrowRight fontSize={20} /></span> </Link>
           </div>
         </div>
         <div className='certified-table-main'>
@@ -127,6 +127,7 @@ const Home = () => {
                 <li> <span><img src={rightlogo} className='logo-arrow' /></span>ISO 45001 : 2018</li>
                 <li> <span><img src={rightlogo} className='logo-arrow' /></span>IS 1554 : PART 1 : 1988</li>
                 <li> <span><img src={rightlogo} className='logo-arrow' /></span>IS 14255 : 1995</li>
+                <li> <span><img src={rightlogo} className='logo-arrow' /></span>BASEC</li>
               </ul>
             </div>
             <div className='vertical-line-two'></div>
@@ -137,6 +138,7 @@ const Home = () => {
                 <li> <span><img src={rightlogo} className='logo-arrow' /></span>IS  9537 : PART 3 : 1983</li>
                 <li> <span><img src={rightlogo} className='logo-arrow' /></span>EN 50575</li>
                 <li> <span><img src={rightlogo} className='logo-arrow' /></span>CE</li>
+                <li> <span><img src={rightlogo} className='logo-arrow' /></span>UKCA</li>
 
               </ul>
             </div>
