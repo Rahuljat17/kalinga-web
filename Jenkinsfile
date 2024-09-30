@@ -49,7 +49,7 @@ pipeline {
                     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
                     nvm use node
                     # Deploy using rsync over SSH
-                    rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./build/ $kalin@$43.239.110.108:/home/$CPANEL_USER/public_html/
+                    rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./build/ $kalin@$43.239.110.108:/home/$kalin/public_html/
                     '''
                 }
             }
