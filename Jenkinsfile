@@ -53,7 +53,7 @@ pipeline {
                     sudo apt-get update
                     sudo apt-get install -y lftp
                     /usr/bin/lftp -c "
-                    open ftp://$ftpUser:$ftpPass@$ftpServer
+                    open 'ftp://$ftpUser:$ftpPass@$ftpServer'
                     lcd build
                     cd $remoteDir
                     mirror -R . .
