@@ -1,5 +1,8 @@
 pipeline {
 	agent { label 'hrms' }
+    environment {
+        CI = false // Do not treat warnings as errors
+    }
 	stages {
         stage('Install NVM and Node.js') {
             steps {
