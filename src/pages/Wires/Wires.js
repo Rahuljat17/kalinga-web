@@ -34,14 +34,16 @@ const Wirespage = () => {
         slide13,
     ];
     const wiresproducts = [
-        "PVC INSULATED SINGLE CORE UNSHEATHED FLEXIBLE/ MULTISTRAND WIRES & CABLES WITH BARE COPPER CONDUCTOR 1100V GRADE IS:694-2010",
-        "PVC INSULATED AND UNSHEATHED CIRCULAR FLEXIBLE WITH BARE COPPER CONDUCTOR",
-        "TELEPHONE CABLE AS PER ITD SPECIFICATION S/WS- 113C & S/WS- 114C",
-        "T.V. COAXIAL CABLES & CC T.V. CABLES",
-        "3 CRORE SUBMERSIBLE CABLE 100 Mts (COOPER)",
-        "COMPUTER CABLE FOR NETWORKING & DSL WIRING",
-        "RIGID P.V.C CONDUIT",
-        "LONG BEND"
+        "PVC Insulated Single Core Unsheathed Flexible/Multistrand Wires & Cables with Bare Copper Conductor 1100V Grade IS:694-2010",
+        "Pvc Insulated Multicore Annealed Bare Copper Wires",
+        "Fire Retardant Wires",
+        "Fire Retardant Low Smoke And Low Halogen Wires",
+        "Fire Survival Wire",
+        "3 Core Submersible Cable",
+        "Telephone Cable As Per Itd S/ws- 113c & S/ws- 114c",
+        "T.v. Coaxial Cables & Cctv Cables",
+        "Computer Cable  For Networking & Dsl Wiring",
+        "DC UV Resistant Wire"
     ];
     return (
         <>
@@ -98,7 +100,7 @@ const Wirespage = () => {
                     {wiresproducts.map((wiresproduct, index) => (
                         <li key={index}>
                             <span className="wiresproduct-icon">▶</span>
-                            {wiresproduct}
+                            <span style={{textTransform: "capitalize"}} >{wiresproduct}</span>
                         </li>
                     ))}
                 </ul>

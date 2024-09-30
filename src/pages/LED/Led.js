@@ -25,13 +25,12 @@ const Led = () => {
         mrlogo9,
     ];
     const products = [
-        { item: 'LED flat panel', power: '3w, 6w, 12w, 18w' },
-        { item: 'LED surface panel', power: '12w, 18w' },
-        { item: 'LED industrial panel', power: '24w, 36w, 45w' },
+        { item: 'LED street lights', power: '18w, 24w, 40w, 60w, 90w, 120w' },
         { item: 'LED bulb', power: '5w, 7w, 9w, 12w' },
-        { item: 'LED tube lights', power: 'NA' },
-        { item: 'LED street lights', power: '18w, 24w, 40w, 60w, 90w, 120w' },
-        { item: 'LED street lights', power: '18w, 24w, 40w, 60w, 90w, 120w' },
+        { item: 'LED flat panel', power: '3w, 6w, 12w, 18w' },
+        { item: 'LED industrial panel', power: '24w, 36w, 45w' },
+        { item: 'LED surface panel', power: '12w, 18w' },
+        { item: 'LED tube lights', power: '10w, 20w' },
     ];
     return (
         <>

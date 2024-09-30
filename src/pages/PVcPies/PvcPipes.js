@@ -100,7 +100,7 @@ const PvcPipes = () => {
                                 <th>Size (mm)</th>
                                 <th>Qty</th>
                                 <th>Qty</th>
-                            </tr>
+                            </tr>                                                                   
                         </thead>
                         <tbody>
                             <tr>
@@ -111,29 +111,29 @@ const PvcPipes = () => {
                             <tr>
                                 {/* <td>Width X Height</td> */}
                                 <td>20 - 12 (Heavy) Premium</td>
-                                <td>200</td>
-                                <td>400</td>
+                                <td className="details-sub-td">200</td>
+                                <td className="details-sub-td">400</td>
                             </tr>
                             <tr>
                                 {/* <td>Pcs</td> */}
                                 <td>25 - 16 (Heavy) Premium</td>
-                                <td>100</td>
-                                <td>200</td>
+                                <td className="details-sub-td">100</td>
+                                <td className="details-sub-td">200</td>
                             </tr>
                             <tr>
                                 <td>30 - 15 (Heavy) Premium</td>
-                                <td>100</td>
-                                <td>200</td>
+                                <td className="details-sub-td">100</td>
+                                <td className="details-sub-td">200</td>
                             </tr>
                             <tr>
                                 <td>38 - 19 (Heavy) Premium</td>
-                                <td>50</td>
-                                <td>100</td>
+                                <td className="details-sub-td">50</td>
+                                <td className="details-sub-td">100</td>
                             </tr>
                             <tr>
                                 <td>50 - 18 (Heavy) Premium</td>
-                                <td>50</td>
-                                <td>100</td>
+                                <td className="details-sub-td">50</td>
+                                <td className="details-sub-td">100</td>
                             </tr>
                         </tbody>
                     </table>

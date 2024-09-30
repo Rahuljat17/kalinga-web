@@ -153,7 +153,7 @@ const Home = () => {
         <div className='ourunits-inside-body'>
           <div className='ourunits-location'>
             <MdLocationPin color='red' fontSize={24} className='bounce-icon' />
-            <h3 className='ourunits-title'>Udhyog Nagar, New Delhi</h3>
+            <h3 className='ourunits-title'>Udyog Nagar, New Delhi</h3>
           </div>
           <div className="vertical-line"></div>
           <div className='ourunits-location'>

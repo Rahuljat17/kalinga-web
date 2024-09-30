@@ -183,6 +183,9 @@ tbody tr:hover {
 .detail-main-td {
   text-align: center !important;
 }
+.details-sub-td {
+  text-align: end !important;
+}
 .details-table td {
   color: #333;
   color: #101828;
