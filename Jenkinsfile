@@ -1,6 +1,23 @@
 pipeline {
 	agent any
 	stages {
+        stage('Install NVM and Node.js') {
+            steps {
+                // Install NVM and load it into the environment
+                sh '''
+                curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+                export NVM_DIR="$HOME/.nvm"
+                [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+                # Install Node.js version you want
+                nvm install node
+
+                # Check Node.js and npm versions
+                node --version
+                npm --version
+                '''
+            }
+        }
 		stage ("Build"){
 			steps{
 			    // Checkout code
