@@ -1,0 +1,21 @@
+# bitbucket-pipelines.yml
+image: node:21
+
+pipelines:
+  default:
+    - step:
+        name: Build and Deploy React App
+        caches:
+          - node
+        script:
+          - echo "Building React app..."
+          - npm install --legacy-peer-deps # Install dependencies
+          - npm run build # Build the React app
+          - pipe: atlassian/ftp-deploy:0.3.3
+            variables:
+              USER: $CPANEL_USER  # cPanel username (store in Bitbucket repository variables)
+              SERVER: $CPANEL_SERVER  # Server IP or domain (store in Bitbucket repository variables)
+              PASSWORD: $CPANEL_PASSWORD  # cPanel password (store in Bitbucket repository variables)
+              REMOTE_PATH: "/public_html"  # Path to the public folder on cPanel
+              LOCAL_PATH: "build"  # React build folder to be deployed
+              DEBUG: "true"  # Optional for debugging
