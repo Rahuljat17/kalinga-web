@@ -1,6 +1,7 @@
 import React from "react";
 import '../Wires/Wires.css';
 import wirelogo from '../../Accets/logoservice.png';
+import rightlogo from '../../Accets/arrow.png';
 import slide1 from '../../Accets/slidei1.jpg';
 import slide2 from '../../Accets/image (2).png';
 import slide3 from '../../Accets/image (3).png';
@@ -41,8 +42,8 @@ const Wirespage = () => {
         "Fire Survival Wire",
         "3 Core Submersible Cable",
         "Telephone Cable As Per Itd S/ws- 113c & S/ws- 114c",
-        "T.v. Coaxial Cables & CCTV Cables",
-        "Computer Cable  For Networking & Dsl Wiring",
+        "TV Coaxial Cables & CCTV Cables",
+        "Computer Cable  For Networking & DSL Wiring",
         "DC UV Resistant Wire"
     ];
     return (
@@ -99,7 +100,8 @@ const Wirespage = () => {
                     <h3 className="wirepage-items-text">Items</h3>
                     {wiresproducts.map((wiresproduct, index) => (
                         <li key={index}>
-                            <span className="wiresproduct-icon">▶</span>
+                            {/* <span className="wiresproduct-icon">▶</span> */}
+                            <img src={rightlogo} className='logo-arrow' style={{margin: "5px 10px 5px 0"}} />
                             <span style={{textTransform: "capitalize"}} >{wiresproduct}</span>
                         </li>
                     ))}

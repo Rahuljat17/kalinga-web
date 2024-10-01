@@ -36,7 +36,7 @@
     }
 }
 .css-jpln7h-MuiTabs-scroller {
-    overflow-x: scroll !important;
+    overflow-x: hidden !important;
 }
 
 @media (max-width: 768px) {
@@ -45,6 +45,9 @@
     }
     .our-network{
         padding: 0 0px;
+    }
+    .css-jpln7h-MuiTabs-scroller {
+        overflow-x: scroll !important;
     }
     .css-19kzrtu{
         padding: 24px 0px !important;

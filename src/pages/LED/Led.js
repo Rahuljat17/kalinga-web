@@ -1,5 +1,6 @@
 import React from "react";
 import '../LED/Led.css';
+import rightlogo from '../../Accets/arrow.png';
 import ledlogo from '../../Accets/logoservice.png';
 import mrlogo1 from '../../Accets/image (2).png';
 import mrlogo2 from '../../Accets/image (3).png';
@@ -79,7 +80,7 @@ const Led = () => {
                                 <tbody>
                                     {products.map((product, index) => (
                                         <tr key={index}>
-                                            <td><span className="bullet">&#9654;</span> {product.item}</td>
+                                            <td><img src={rightlogo} className='logo-arrow' style={{margin: "5px 10px 0px 0"}} />{product.item}</td>
                                             <td>{product.power}</td>
                                         </tr>
                                     ))}

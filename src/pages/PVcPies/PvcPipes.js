@@ -2,6 +2,7 @@ import React from "react";
 import '../PVcPies/PvcPipes.css';
 import pvcpie from '../../Accets/pvcpipes background.png';
 import logoone from '../../Accets/logoservice.png';
+import rightlogo from '../../Accets/arrow.png';
 import Marquee from "react-fast-marquee";
 import pvcpipeslogo1 from '../../Accets/image (2).png';
 import pvcpipeslogo2 from '../../Accets/image (3).png';
@@ -66,7 +67,7 @@ const PvcPipes = () => {
                                 <tbody>
                                     {data.map((item, index) => (
                                         <tr key={index}>
-                                            <td>{item.size}</td>
+                                            <td><img src={rightlogo} className='logo-arrow' style={{margin: "0 10px 0px 0"}} />{item.size}</td>
                                             <td style={{textAlign: "end"}}>{item.standardPacking}</td>
                                         </tr>
                                     ))}
@@ -115,28 +116,28 @@ const PvcPipes = () => {
                             </tr>
                             <tr>
                                 {/* <td>Width X Height</td> */}
-                                <td>20 - 12 (Heavy) Premium</td>
+                                <td><img src={rightlogo} className='logo-arrow' style={{margin: "0 10px 0px 0"}} />20 - 12 (Heavy) Premium</td>
                                 <td className="details-sub-td">200</td>
                                 <td className="details-sub-td">400</td>
                             </tr>
                             <tr>
                                 {/* <td>Pcs</td> */}
-                                <td>25 - 16 (Heavy) Premium</td>
+                                <td><img src={rightlogo} className='logo-arrow' style={{margin: "0 10px 0px 0"}} />25 - 16 (Heavy) Premium</td>
                                 <td className="details-sub-td">100</td>
                                 <td className="details-sub-td">200</td>
                             </tr>
                             <tr>
-                                <td>30 - 15 (Heavy) Premium</td>
+                                <td><img src={rightlogo} className='logo-arrow' style={{margin: "0 10px 0px 0"}} />30 - 15 (Heavy) Premium</td>
                                 <td className="details-sub-td">100</td>
                                 <td className="details-sub-td">200</td>
                             </tr>
                             <tr>
-                                <td>38 - 19 (Heavy) Premium</td>
+                                <td><img src={rightlogo} className='logo-arrow' style={{margin: "0 10px 0px 0"}} />38 - 19 (Heavy) Premium</td>
                                 <td className="details-sub-td">50</td>
                                 <td className="details-sub-td">100</td>
                             </tr>
                             <tr>
-                                <td>50 - 18 (Heavy) Premium</td>
+                                <td><img src={rightlogo} className='logo-arrow' style={{margin: "0 10px 0px 0"}} />50 - 18 (Heavy) Premium</td>
                                 <td className="details-sub-td">50</td>
                                 <td className="details-sub-td">100</td>
                             </tr>

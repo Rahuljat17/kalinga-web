@@ -21,7 +21,7 @@ a{
 }
 .footer-connect-withus {
   color: rgba(255, 255, 255, 0.7);
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -31,9 +31,10 @@ a{
 }
 .footer-connect-maintitle {
   color: #fff;
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
   font-style: normal;
+  margin-top: 55px;
   font-weight: 600;
   line-height: normal;
 }
@@ -44,7 +45,7 @@ a{
 }
 .foot-our-network {
   color: #fff;
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -52,7 +53,7 @@ a{
 }
 .foot-network-menu {
   color: rgba(255, 255, 255, 0.7);
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -64,7 +65,7 @@ a{
 }
 .foot-getintouch-title {
   color: #fff;
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -72,7 +73,7 @@ a{
 }
 .foot-contactus-button {
   color: #fff;
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -80,7 +81,7 @@ a{
 }
 .foot-contactus-today {
   color: rgba(255, 255, 255, 0.7);
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
