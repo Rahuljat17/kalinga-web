@@ -1,4 +1,3 @@
-# bitbucket-pipelines.yml
 image: node:21
 
 pipelines:
@@ -8,14 +7,10 @@ pipelines:
         caches:
           - node
         script:
-          - echo "Building React app..."
           - npm install --legacy-peer-deps # Install dependencies
           - CI=false npm run build # Build the React app
-          - pipe: atlassian/ftp-deploy:0.3.3
-            variables:
-              USER: $CPANEL_USER  # cPanel username (store in Bitbucket repository variables)
-              SERVER: $CPANEL_SERVER  # Server IP or domain (store in Bitbucket repository variables)
-              PASSWORD: $CPANEL_PASSWORD  # cPanel password (store in Bitbucket repository variables)
-              REMOTE_PATH: "/public_html"  # Path to the public folder on cPanel
-              LOCAL_PATH: "build"  # React build folder to be deployed
-              DEBUG: "true"  # Optional for debugging
+          - apt-get update && apt-get install lftp -y # Install lftp for FTP deployment
+          - echo "Deploying to cPanel via FTP"
+          - lftp -u "$CPANEL_USER,$CPANEL_PASSWORD" -e 'set ftp:ssl-allow no; mirror --delete-first -vvv -R build /public_html; quit' "$CPANEL_SERVER" # Corrected command for deployment
+        services:
+          - docker
