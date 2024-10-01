@@ -68,7 +68,7 @@ const Led = () => {
                         <div className="products-container">
                             {/* <h1><span className="icon"><img src={ledlogo} className="led-logo" /></span> Our <span className="highlight">Products</span></h1> */}
                             <h2 className="wires-title">
-                                <img src={ledlogo} className="wires-logo-image" />Our <span className="wires-span-text"> Customers</span>
+                                <img src={ledlogo} className="wires-logo-image" />Our <span className="wires-span-text"> Products</span>
                             </h2>
                             <table className="products-table">
                                 <thead>

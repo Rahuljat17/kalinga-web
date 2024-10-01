@@ -98,14 +98,14 @@ const Home = () => {
             <h3 className='expertise-last-title'>Skilled professionals</h3>
           </div>
           <div className='expertise-card'>
-            <h2 className='expertise-title'>{licenses} <span><AiOutlinePlus style={{ position: "relative", top: "5px", fontSize: "45px" }} className='expertise-logo-icon' /></span></h2>
+            <h2 className='expertise-title'>{licenses}</h2>
             <img src={pageslogo} className='expertise-logos' />
-            <h3 className='expertise-last-title'>IBS licenced obtained</h3>
+            <h3 className='expertise-last-title'>BIS licenced obtained</h3>
           </div>
           <div className='expertise-card'>
-            <h2 className='expertise-title'>100</h2>
+            <h2 className='expertise-title'>100%</h2>
             <img src={ticklogo} className='expertise-logos' />
-            <h3 className='expertise-last-title'>IOS 9001 certified</h3>
+            <h3 className='expertise-last-title'>ISO 9001 certified</h3>
           </div>
         </div>
       </div>

@@ -32,23 +32,23 @@ const PvcPipes = () => {
                 </div>
                 <div>
                     <div className="pvcpipes-scroll">
-                    <h2 className="wires-title">
-                        <img src={logoone} className="wires-logo-image" />Our <span className="wires-span-text"> Customers</span>
-                    </h2>
+                        <h2 className="wires-title">
+                            <img src={logoone} className="wires-logo-image" />Our <span className="wires-span-text"> Customers</span>
+                        </h2>
                         {/* <h2 className="led-logo-text-span"> <img src={logoone} className="led-logo" />Our <span className="led-logo-span">Customers</span> </h2> */}
                     </div>
                     <div className="product-marquee">
-                    <div class="marquee marquee--8">
-                        <img class="marquee__item" src={pvcpipeslogo1} width="100" height="100" alt="" />
-                        <img class="marquee__item" src={pvcpipeslogo2} width="100" height="100" alt="" />
-                        <img class="marquee__item" src={pvcpipeslogo3} width="100" height="100" alt="" />
-                        <img class="marquee__item" src={pvcpipeslogo4} width="100" height="100" alt="" />
-                        <img class="marquee__item" src={pvcpipeslogo5} width="100" height="100" alt="" />
-                        <img class="marquee__item" src={pvcpipeslogo6} width="100" height="100" alt="" />
-                        <img class="marquee__item" src={pvcpipeslogo7} width="100" height="100" alt="" />
-                        <img class="marquee__item" src={pvcpipeslogo8} width="100" height="100" alt="" />
+                        <div class="marquee marquee--8">
+                            <img class="marquee__item" src={pvcpipeslogo1} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={pvcpipeslogo2} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={pvcpipeslogo3} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={pvcpipeslogo4} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={pvcpipeslogo5} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={pvcpipeslogo6} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={pvcpipeslogo7} width="100" height="100" alt="" />
+                            <img class="marquee__item" src={pvcpipeslogo8} width="100" height="100" alt="" />
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div className="wires-container">
                     <h2 className="wires-title">
@@ -60,15 +60,20 @@ const PvcPipes = () => {
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Size</th>
-                                        <th style={{textAlign: "end"}}>Standard Packing</th>
+                                        <th style={{ color: "#667085", fontWeight: "normal" }}>Size</th>
+                                        <th style={{ textAlign: "end", color: "#667085", fontWeight: "normal" }}>Standard Packing</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+
+                            <tr>
+                                <td>in mm</td>
+                                <td style={{textAlign: "right"}} >in meters</td>
+                            </tr>
                                     {data.map((item, index) => (
                                         <tr key={index}>
-                                            <td><img src={rightlogo} className='logo-arrow' style={{margin: "0 10px 0px 0"}} />{item.size}</td>
-                                            <td style={{textAlign: "end"}}>{item.standardPacking}</td>
+                                            <td><img src={rightlogo} className='logo-arrow' style={{ margin: "0 10px 0px 0" }} />{item.size}</td>
+                                            <td style={{ textAlign: "end" }}>{item.standardPacking}</td>
                                         </tr>
                                     ))}
                                 </tbody>
@@ -106,7 +111,7 @@ const PvcPipes = () => {
                                 <th>Size (mm)</th>
                                 <th>Qty</th>
                                 <th>Qty</th>
-                            </tr>                                                                   
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -116,28 +121,28 @@ const PvcPipes = () => {
                             </tr>
                             <tr>
                                 {/* <td>Width X Height</td> */}
-                                <td><img src={rightlogo} className='logo-arrow' style={{margin: "0 10px 0px 0"}} />20 - 12 (Heavy) Premium</td>
+                                <td><img src={rightlogo} className='logo-arrow' style={{ margin: "0 10px 0px 0" }} />20 - 12 (Heavy) Premium</td>
                                 <td className="details-sub-td">200</td>
                                 <td className="details-sub-td">400</td>
                             </tr>
                             <tr>
                                 {/* <td>Pcs</td> */}
-                                <td><img src={rightlogo} className='logo-arrow' style={{margin: "0 10px 0px 0"}} />25 - 16 (Heavy) Premium</td>
+                                <td><img src={rightlogo} className='logo-arrow' style={{ margin: "0 10px 0px 0" }} />25 - 16 (Heavy) Premium</td>
                                 <td className="details-sub-td">100</td>
                                 <td className="details-sub-td">200</td>
                             </tr>
                             <tr>
-                                <td><img src={rightlogo} className='logo-arrow' style={{margin: "0 10px 0px 0"}} />30 - 15 (Heavy) Premium</td>
+                                <td><img src={rightlogo} className='logo-arrow' style={{ margin: "0 10px 0px 0" }} />30 - 15 (Heavy) Premium</td>
                                 <td className="details-sub-td">100</td>
                                 <td className="details-sub-td">200</td>
                             </tr>
                             <tr>
-                                <td><img src={rightlogo} className='logo-arrow' style={{margin: "0 10px 0px 0"}} />38 - 19 (Heavy) Premium</td>
+                                <td><img src={rightlogo} className='logo-arrow' style={{ margin: "0 10px 0px 0" }} />38 - 19 (Heavy) Premium</td>
                                 <td className="details-sub-td">50</td>
                                 <td className="details-sub-td">100</td>
                             </tr>
                             <tr>
-                                <td><img src={rightlogo} className='logo-arrow' style={{margin: "0 10px 0px 0"}} />50 - 18 (Heavy) Premium</td>
+                                <td><img src={rightlogo} className='logo-arrow' style={{ margin: "0 10px 0px 0" }} />50 - 18 (Heavy) Premium</td>
                                 <td className="details-sub-td">50</td>
                                 <td className="details-sub-td">100</td>
                             </tr>
