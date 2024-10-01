@@ -35,7 +35,7 @@ const Home = () => {
     { id: 2, image: producthree, text: 'Cables', redirect: '/cables' },
     { id: 3, image: productfour, text: 'PVC Pipes', redirect: '/pvc-pipes' },
     { id: 4, image: productfive, text: 'Lighting', redirect: '/lighting' },
-    { id: 5, image: productone, text: 'Other products', redirect: '/others' },
+    { id: 5, image: productone, text: 'Other Products', redirect: '/others' },
   ];
   const [count, setCount] = useState(65);
   const [Skilled, setSkilled] = useState(650);
@@ -116,8 +116,8 @@ const Home = () => {
             <img src={logoservice} className='certified-image' />
             <h3 className='certified-imagetext'>We are <span className='certified-imagespan'>Recognised and Certified</span></h3>
           </div>
-          <div>
-            <Link to="/our-certification" style={{ textDecoration: "none", fontSize: "9px", display: "flex", alignItems: "center", marginTop: "30px" }}>View All <span><MdOutlineKeyboardDoubleArrowRight fontSize={20} /></span> </Link>
+          <div className='viewallbtn2'>
+            <Link to="/our-certification" className='certificate-view-all' >View All <span><MdOutlineKeyboardDoubleArrowRight fontSize={20} /></span> </Link>
           </div>
         </div>
         <div className='certified-table-main'>

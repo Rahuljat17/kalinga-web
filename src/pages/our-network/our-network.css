@@ -35,6 +35,9 @@
         opacity: 1;
     }
 }
+.css-jpln7h-MuiTabs-scroller {
+    overflow-x: scroll !important;
+}
 
 @media (max-width: 768px) {
     .container{

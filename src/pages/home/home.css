@@ -84,7 +84,15 @@
   font-size: 16px;
   font-weight: 500;
 }
-
+.certificate-view-all{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #c50568;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
 .expertise-main-body {
   width: 100%;
   height: 320px;
@@ -551,7 +559,7 @@
     font-size: 17px;
   }
   .certified-imagetext {
-    font-size: 17px;
+    font-size: 20px;
     text-align: center !important;
     white-space: nowrap;
   }
@@ -565,8 +573,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
     margin: 5px 20px;
     gap: 10px;
+    .viewallbtn2{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
   }
   .certified-table {
     width: 90%;
@@ -600,5 +615,12 @@
   .card-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile */
     margin: 0px 0px;
+  }
+  .certificate-view-all{
+    text-decoration: none;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    margin-top: 00px;
   }
 }

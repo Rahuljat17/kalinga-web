@@ -57,7 +57,7 @@ export default function BasicTabs() {
 
   return (
     <div className='container'>
-      <Box sx={{ width: '100%' }}>
+      <Box className="network-heading" sx={{ width: '100%' }}>
         <Box sx={{ borderBottom: 0, borderColor: '#C50568' }}>
           <Tabs
             value={value}
