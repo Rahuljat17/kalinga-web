@@ -10,7 +10,7 @@ pipelines:
         script:
           - echo "Building React app..."
           - npm install --legacy-peer-deps # Install dependencies
-          - npm run build # Build the React app
+          - CI=false npm run build # Build the React app
           - pipe: atlassian/ftp-deploy:0.3.3
             variables:
               USER: $CPANEL_USER  # cPanel username (store in Bitbucket repository variables)
