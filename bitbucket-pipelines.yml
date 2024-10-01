@@ -1,0 +1,16 @@
+image: node:21
+
+pipelines:
+  default:
+    - step:
+        name: Build and Deploy React App
+        caches:
+          - node
+        script:
+          - npm install --legacy-peer-deps # Install dependencies
+          - CI=false npm run build # Build the React app
+          - apt-get update && apt-get install lftp -y # Install lftp for FTP deployment
+          - echo "Deploying to cPanel via FTP"
+          - lftp -u "$CPANEL_USER,$CPANEL_PASSWORD" -e 'set ftp:ssl-allow no; mirror --delete-first -vvv -R build /public_html; quit' "$CPANEL_SERVER" # Corrected command for deployment
+        services:
+          - docker
