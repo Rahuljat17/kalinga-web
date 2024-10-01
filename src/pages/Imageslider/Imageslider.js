@@ -3,9 +3,9 @@ import './Imageslider.css'; // Make sure to use the correct path
 
 // Import your images
 import sliderImage1 from '../../Accets/sliderimage.png';
-import sliderImage2 from '../../Accets/homeslider.jpg';
-import sliderImage3 from '../../Accets/homeslider2.jpg';
-import logo from '../../Accets/homeslider.jpg';
+import sliderImage2 from '../../Accets/homeslider.png';
+import sliderImage3 from '../../Accets/homeslider2.png';
+// import logo from '../../Accets/homeslider.jpg';
 
 const Imageslider = () => {
     const images = [sliderImage1, sliderImage2, sliderImage3]; // Store multiple images here

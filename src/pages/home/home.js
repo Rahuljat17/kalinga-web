@@ -107,11 +107,6 @@ const Home = () => {
             <img src={ticklogo} className='expertise-logos' />
             <h3 className='expertise-last-title'>IOS 9001 certified</h3>
           </div>
-          {/* <div className='expertise-card'>
-            <h2 className='expertise-title-last'>100%</h2>
-            <img src={ticklogo} className='expertise-logos' />
-            <h3 className='expertise-last-title-two'>IOS 9001 certified</h3>
-          </div> */}
         </div>
       </div>
       {/* certified */}
