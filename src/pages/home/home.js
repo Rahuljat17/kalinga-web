@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './home.css'
 import HeroImage from "../../Accets/HeroImage.png";
 import logoservice from '../../Accets/logoservice.png';
@@ -40,7 +40,48 @@ const Home = () => {
   const [count, setCount] = useState(65);
   const [Skilled, setSkilled] = useState(650);
   const [licenses, setlicenses] = useState(8);
+  const [number, setNumber] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false); // New flag to run the animation only once
+  const sectionRef = useRef(null);
 
+  const increaseNumberAnimation = (endNumber, speed = 10) => {
+    let currentNumber = 0;
+
+    const incNbrRec = () => {
+      if (currentNumber <= endNumber) {
+        setNumber(currentNumber);
+        currentNumber++;
+        setTimeout(incNbrRec, speed);
+      }
+    };
+
+    incNbrRec();
+  };
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            increaseNumberAnimation(100);
+            setHasAnimated(true); // Ensure the animation runs only once
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, [hasAnimated]);
   return (
     <div>
       {/* <img src={HeroImage} style={{ width: "100%", objectFit: "cover" }} /> */}
@@ -85,27 +126,30 @@ const Home = () => {
         </div>
         {/*  */}
       </div>
-      <div className='expertise-main-body'>
-        <div className='expertise-body'>
-          <div className='expertise-card'>
-            <h2 className='expertise-title'>{count} <span><AiOutlinePlus style={{ position: "relative", top: "5px", fontSize: "45px" }} className='expertise-logo-icon' /></span></h2>
-            <img src={worklogo} className='expertise-logos' />
-            <h3 className='expertise-last-title'>Years of expertise</h3>
-          </div>
-          <div className='expertise-card'>
-            <h2 className='expertise-title'>{Skilled} <span><AiOutlinePlus style={{ position: "relative", top: "5px", fontSize: "45px" }} className='expertise-logo-icon' /></span></h2>
-            <img src={mechanic} className='expertise-logos' />
-            <h3 className='expertise-last-title'>Skilled professionals</h3>
-          </div>
-          <div className='expertise-card'>
-            <h2 className='expertise-title'>{licenses}</h2>
-            <img src={pageslogo} className='expertise-logos' />
-            <h3 className='expertise-last-title'>BIS licenced obtained</h3>
-          </div>
-          <div className='expertise-card'>
-            <h2 className='expertise-title'>100%</h2>
-            <img src={ticklogo} className='expertise-logos' />
-            <h3 className='expertise-last-title'>ISO 9001 certified</h3>
+      <div ref={sectionRef}>
+        <div className='expertise-main-body'>
+          <div className='expertise-body'>
+            <div className='expertise-card'>
+              <h2 className='expertise-title'>{count} <span><AiOutlinePlus style={{ position: "relative", top: "5px", fontSize: "45px" }} className='expertise-logo-icon' /></span></h2>
+              <img src={worklogo} className='expertise-logos' />
+              <h3 className='expertise-last-title'>Years of expertise</h3>
+            </div>
+            <div className='expertise-card'>
+              <h2 className='expertise-title'>{Skilled} <span><AiOutlinePlus style={{ position: "relative", top: "5px", fontSize: "45px" }} className='expertise-logo-icon' /></span></h2>
+              <img src={mechanic} className='expertise-logos' />
+              <h3 className='expertise-last-title'>Skilled professionals</h3>
+            </div>
+            <div className='expertise-card'>
+              <h2 className='expertise-title'>{licenses}</h2>
+              <img src={pageslogo} className='expertise-logos' />
+              <h3 className='expertise-last-title'>BIS licenced obtained</h3>
+            </div>
+            <div className='expertise-card'>
+              <h2 className='expertise-title'><span>{number}</span> %</h2>
+              {/* <button onClick={() => increaseNumberAnimation(100)}>Play animation</button> */}
+              <img src={ticklogo} className='expertise-logos' />
+              <h3 className='expertise-last-title'>ISO 9001 certified</h3>
+            </div>
           </div>
         </div>
       </div>
