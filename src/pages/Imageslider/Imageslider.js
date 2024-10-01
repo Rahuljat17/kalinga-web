@@ -69,12 +69,12 @@ const Imageslider = () => {
                 ))}
             </div>
 
-            <ul className="dots">
+            <ul className="dts">
                 {images.map((_, index) => (
                     <li
                         key={index}
-                        className={active === index ? 'active' : ''}
-                        onClick={() => setActive(index)}
+                        // className={active === index ? 'active' : ''}
+                        // onClick={() => setActive(index)}
                         ref={(el) => (dotsRef.current[index] = el)}
                     ></li>
                 ))}

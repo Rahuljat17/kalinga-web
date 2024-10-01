@@ -29,7 +29,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 import KalingaPremeumLogo from "../../Accets/KalingaPremeumLogo.png";
 
-const pages = ['Home', 'About Us', 'Our Network', 'Our Certification','Contact Us'];
+const pages = ['Home', 'About Us', 'Our Network', 'Our Certification'];
 const productOptions = ['Wires', 'Cables', 'PVC Pipes', 'Lighting', 'Others'];
 
 function ResponsiveAppBar() {
