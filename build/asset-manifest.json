@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d02e5dad.css",
-    "main.js": "/static/js/main.289af024.js",
+    "main.css": "/static/css/main.6268f006.css",
+    "main.js": "/static/js/main.f3a21ea0.js",
     "static/js/787.d5197ce1.chunk.js": "/static/js/787.d5197ce1.chunk.js",
     "static/media/pvcpipes background.png": "/static/media/pvcpipes background.1c3ee40950a11f1d78a8.png",
     "static/media/led background.png": "/static/media/led background.060f84d805b40f2ae6b9.png",
@@ -9,10 +9,12 @@
     "static/media/wires background.png": "/static/media/wires background.f1253d9098c1e9f5e283.png",
     "static/media/WhatsApp Video 2024-09-23 at 11.55.16 AM.mp4": "/static/media/WhatsApp Video 2024-09-23 at 11.55.16 AM.8cc93af3ff5dbbb42448.mp4",
     "static/media/others background.png": "/static/media/others background.6ac1c91ff66aee9681e4.png",
+    "static/media/homeslider.png": "/static/media/homeslider.0ba2c17f8df8ad238e59.png",
+    "static/media/sliderimage.png": "/static/media/sliderimage.9db130b4386382753e2e.png",
+    "static/media/homeslider2.png": "/static/media/homeslider2.27954fca77136ce43d01.png",
     "static/media/networkimage3.png": "/static/media/networkimage3.09d5ad1d434ff80a1b27.png",
     "static/media/networkimage4.png": "/static/media/networkimage4.deb7e4bd6ea06b7e79aa.png",
     "static/media/networkimage7.png": "/static/media/networkimage7.f539e73a8ce41d88844b.png",
-    "static/media/sliderimage.png": "/static/media/sliderimage.be880b87dc634c49d98e.png",
     "static/media/analogometer.png": "/static/media/analogometer.0b2b0286ff7059198bae.png",
     "static/media/tapeimage.png": "/static/media/tapeimage.bb720d434bf7a11b9a59.png",
     "static/media/networkimage10.png": "/static/media/networkimage10.dbf522f2e223c209ad52.png",
@@ -53,11 +55,9 @@
     "static/media/kunal sethi[1].png": "/static/media/kunal sethi[1].85ffbad6cc0e9b42bbf1.png",
     "static/media/Frame 63.png": "/static/media/Frame 63.7520664c68aab0312703.png",
     "static/media/image (6).png": "/static/media/image (6).2495aed7d23302cdc358.png",
-    "static/media/homeslider.jpg": "/static/media/homeslider.528742cde29215aa8b0e.jpg",
     "static/media/image (9).png": "/static/media/image (9).12904c7dbc0514ec7465.png",
     "static/media/image (3).png": "/static/media/image (3).35f999d61806206f6818.png",
     "static/media/certificate7.png": "/static/media/certificate7.6f28b22ab7227820e272.png",
-    "static/media/homeslider2.jpg": "/static/media/homeslider2.799fd98a40dce2a24db6.jpg",
     "static/media/image (5).png": "/static/media/image (5).bb6944128bbf24718eb0.png",
     "static/media/certificate6.png": "/static/media/certificate6.118be7746bb6c139e819.png",
     "static/media/slidei3.jpg": "/static/media/slidei3.f3327d38a0e121b9b3a2.jpg",
@@ -74,12 +74,12 @@
     "static/media/1960.png": "/static/media/1960.c130e21fff441d2dfe46.png",
     "static/media/instagram.png": "/static/media/instagram.3254e19fa0adfa7e3ac9.png",
     "index.html": "/index.html",
-    "main.d02e5dad.css.map": "/static/css/main.d02e5dad.css.map",
-    "main.289af024.js.map": "/static/js/main.289af024.js.map",
+    "main.6268f006.css.map": "/static/css/main.6268f006.css.map",
+    "main.f3a21ea0.js.map": "/static/js/main.f3a21ea0.js.map",
     "787.d5197ce1.chunk.js.map": "/static/js/787.d5197ce1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d02e5dad.css",
-    "static/js/main.289af024.js"
+    "static/css/main.6268f006.css",
+    "static/js/main.f3a21ea0.js"
   ]
 }

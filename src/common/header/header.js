@@ -29,7 +29,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 import KalingaPremeumLogo from "../../Accets/KalingaPremeumLogo.png";
 
-const pages = ['Home', 'About Us', 'Our Network', 'Our Certification'];
+const pages = ['Home', 'About Us', 'Our Network', 'Our Certification','Contact Us'];
 const productOptions = ['Wires', 'Cables', 'PVC Pipes', 'Lighting', 'Others'];
 
 function ResponsiveAppBar() {
@@ -62,10 +62,10 @@ function ResponsiveAppBar() {
   return (
     <AppBar position="static" sx={{ backgroundColor: 'white', color: 'black' }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{ justifyContent: 'center' }}>
+        <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
           <img src={KalingaPremeumLogo} className='logo' />
 
-          <Box sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'center' }}>
+          <Box sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'space-between' }}>
             <IconButton
               size="large"
               aria-label="account of current user"
