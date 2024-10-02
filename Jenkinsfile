@@ -39,27 +39,14 @@ pipeline {
                 '''
 			}
 		}
-        stage('Deploy via lftp') {
+        stage('Deploy') {
             steps {
-                script {
-                    // FTP server details
-                    def ftpServer = "kalingas.com/cpanel"
-                    def ftpUser = "kalin"
-                    def ftpPass = "bt;8x*%#&Lq)"
-                    def remoteDir = "/home/kalin/public_html/"
-
-                    // Using lftp to upload files
-                    sh """
-                    sudo apt-get update
-                    sudo apt-get install -y lftp
-                    /usr/bin/lftp -c "
-                    open 'ftp://$ftpUser:$ftpPass@$ftpServer'
-                    lcd build
-                    cd $remoteDir
-                    mirror -R . .
-                    bye
-                    "
-                    """
+                // Use SSH private key for deployment
+                sshagent(['cPanel-ssh-key']) {
+                    sh '''
+                    # Deploy using rsync over SSH
+                    rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./build/ $CPANEL_USER@$CPANEL_HOST:/home/$CPANEL_USER/public_html/
+                    '''
                 }
             }
         }
