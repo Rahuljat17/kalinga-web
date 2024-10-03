@@ -36,7 +36,7 @@ const Wirespage = () => {
     ];
     const wiresproducts = [
         "PVC Insulated Single Core Unsheathed Flexible/Multistrand Wires & Cables with Bare Copper Conductor 1100V Grade IS:694-2010",
-        "Pvc Insulated Multicore Annealed Bare Copper Wires",
+        "PVC Insulated Multicore Annealed Bare Copper Wires",
         "Fire Retardant Wires",
         "Fire Retardant Low Smoke And Low Halogen Wires",
         "Fire Survival Wire",
@@ -51,7 +51,7 @@ const Wirespage = () => {
             <div className="background-container-wires">
                 <div className="text-container-wires">
                     <h1 className="text-primary-wires">Wires</h1>
-                    <h2 className="text-secondary-wires">Experience unmatched reliability and safety with our premium  <br /> wires, designed for seamless conductivity and long-lasting </h2>
+                    <h2 className="text-secondary-wires">Experience unmatched reliability and safety with our premium  <br /> wires, designed for seamless conductivity and long-lasting <br />performance. </h2>
                 </div>
             </div>
             <div className="wirespage-customerslide">

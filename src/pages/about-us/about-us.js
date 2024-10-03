@@ -158,7 +158,7 @@ const AboutUs = () => {
             <div class="event-icon">
               <img src={Historypic6} alt="Shri Bal Raj Sethi" />
             </div>
-            <div class="event-description">Receives a prestigious order from World Bank clocking in a ₹50 crore turnover after the third generation (Shri Atul Sethi joins hands in the family business) </div>
+            <div class="event-description">Receives a prestigious order from World Bank clocking in a ₹50 crore turnover after the third generation (Shri Atul Sethi joins hands in the family business). </div>
           </div>
           <div class="timeline-event">
             <div class="event-date">2004</div>
@@ -198,7 +198,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className='ourTeams'>
-        <h2><img src={HeadingIcon} alt="Heading Icon" /><span>Meet our</span><span>team</span></h2>
+        <h2><img src={HeadingIcon} alt="Heading Icon" /><span>Meet our</span><span>Team</span></h2>
         <div className='members'>
           {teamMembers.map((member) => (
             <div key={member.id} className='member'>

@@ -19,6 +19,7 @@
             }
             span:nth-child(3){
                 color: #C50568;
+                margin-left: 5px;
             }
         }
         p{
@@ -36,6 +37,7 @@
         }
         span:nth-child(3){
             color: #C50568;
+            margin-left: 5px;
         }
     }
     .members{

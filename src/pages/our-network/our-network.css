@@ -51,6 +51,7 @@
     }
     .MuiTabs-fixed {
         overflow-x: scroll !important;
+        padding-left: 200px;
     }
     .css-19kzrtu{
         padding: 24px 0px !important;
