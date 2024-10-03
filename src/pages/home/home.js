@@ -58,7 +58,7 @@ const Home = () => {
     incNbrRec();
   };
 
-  const increaseCountAnimation = (endNumber, speed = 40) => {
+  const increaseCountAnimation = (endNumber, speed = 30) => {
     let currentNumber = 0;
 
     const incNbrRec = () => {

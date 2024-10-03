@@ -14,6 +14,7 @@
 .text-container-wires {
   text-align: center !important;
   color: white;
+  margin: 60px 0;
 }
 
 .text-primary-wires {
@@ -31,6 +32,7 @@
 .text-secondary-wires {
   color: #fff;
   text-align: center;
+  text-shadow: 2px 2px 10px black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 23px;
   font-style: normal;
@@ -196,7 +198,7 @@
     font-size: 22px;
   }
   .text-secondary-wires {
-    font-size: 17px;
+    font-size: 14px;
   }
   .wirespage-textslide {
     margin: 1rem 1rem;

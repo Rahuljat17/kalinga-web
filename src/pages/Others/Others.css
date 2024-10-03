@@ -14,6 +14,7 @@
 .text-container-others {
   text-align: center !important;
   color: white;
+  margin: 20px 0;
 }
 
 .text-primary-others {
@@ -35,6 +36,7 @@
   font-size: 23px;
   font-style: normal;
   font-weight: 500;
+  text-shadow: 2px 2px 10px black;
   line-height: 120%;
 }
 .otherpage-cuto-image {
@@ -202,7 +204,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 60px;
 }
 
 .mcb-grid {
@@ -224,7 +226,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 60px;
 }
 .tape-grid-body {
   display: grid;
@@ -244,7 +246,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 60px;
 }
 .analog-grid-body {
   display: grid;
@@ -269,7 +271,7 @@
   }
 
   .text-secondary-others {
-    font-size: 16px;
+    font-size: 14px;
   }
   .Insulation-towerlogo {
     margin: 1rem 1rem;

@@ -14,6 +14,7 @@
 .pvcpipes-text {
   text-align: center;
   color: white;
+  margin: 60px 0;
 }
 .marquee-container {
   padding-left: 100px;
@@ -33,6 +34,7 @@
 .pvcpipe-texttwo {
   color: #fff;
   text-align: center;
+  text-shadow: 2px 2px 10px black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 23px;
   font-style: normal;
@@ -243,7 +245,7 @@ tbody tr:hover {
     text-align: center;
   }
   .pvcpipe-texttwo {
-    font-size: 17px;
+    font-size: 14px;
   }
   .pvcpipes-scroll {
     margin: 2rem 1rem;
