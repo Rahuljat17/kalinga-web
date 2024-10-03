@@ -70,7 +70,7 @@ const AboutUs = () => {
       <div className='aboutUs'>
         <video src={MainVideo} autoPlay loop muted></video>
         <div className='contents'>
-          <h2><img src={HeadingIcon} alt="Heading Icon" /><span>About</span><span>us</span></h2>
+          <h2><img src={HeadingIcon} alt="Heading Icon" /><span>About</span><span>Us</span></h2>
           <p>For over six decades, our network of companies has been dedicated to delivering high-quality products and services across various industries. Kalinga Cables & Conduit Company specializes in manufacturing reliable PVC/XLPE insulated wires, cables, and conduits, serving domestic, commercial, and industrial markets. Our commitment to innovation ensures that we meet the evolving needs of electrical installations.</p>
 
           <p>Kalinga Premium focuses on providing safe and durable house wiring solutions, offering a complete range of products, including electrical meters and PVC tape, for comprehensive electrical setups.</p>

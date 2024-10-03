@@ -37,9 +37,9 @@ const Footer = () => {
                         <div className="foot-netwoek-main">
                             <h3 className="foot-our-network">Our Network</h3>
                             <h3 className="foot-network-menu">Kalinga Cables and Conduit Company</h3>
-                            <h3 className="foot-network-menu">Kalinga Cables</h3>
+                            <h3 className="foot-network-menu">Kalinga Cable Company</h3>
                             <h3 className="foot-network-menu">Kalinga Hotels and Resorts</h3>
-                            <h3 className="foot-network-menu">Sahni Strips Pvt Ltd</h3>
+                            <h3 className="foot-network-menu">Sahni Strips Pvt. Ltd.</h3>
                         </div>
                         {/*  */}
                         <div className="foot-getintouch-main">
@@ -63,7 +63,7 @@ const Footer = () => {
                                 Contact us
                             </Button>
                             </a>
-                            <h3 className="foot-contactus-today">Contact with us today</h3>
+                            <h3 className="foot-contactus-today">Connect with us</h3>
                             <div className="foot-logo-all">
                                 {/* <img src={inslogo} className="foot-logos" /> */}
                                 {/* <img src={twitterlogo} className="foot-logos" /> */}

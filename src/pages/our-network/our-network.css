@@ -35,9 +35,9 @@
         opacity: 1;
     }
 }
-.css-jpln7h-MuiTabs-scroller {
+/* .css-jpln7h-MuiTabs-scroller {
     overflow-x: hidden !important;
-}
+} */
 
 @media (max-width: 768px) {
     .container{
@@ -46,7 +46,10 @@
     .our-network{
         padding: 0 0px;
     }
-    .css-jpln7h-MuiTabs-scroller {
+    .css-1anid1y{
+        overflow-x: scroll !important;
+    }
+    .MuiTabs-fixed {
         overflow-x: scroll !important;
     }
     .css-19kzrtu{

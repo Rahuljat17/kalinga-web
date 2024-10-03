@@ -48,7 +48,7 @@
 .otherpage-textslide {
   margin: 3rem 7.5rem;
   color: #000;
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
@@ -57,7 +57,7 @@
 
 .otherpage-custo-span {
   color: #c50568;
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
@@ -123,7 +123,7 @@
 .PVC-Insulation-textone {
   color: #fff;
   text-align: center;
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
@@ -143,7 +143,7 @@
 .analog-main-text {
   color: #fff;
   text-align: center;
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
@@ -163,7 +163,7 @@
 .mcb-main-text {
   color: #fff;
   text-align: center;
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
@@ -172,7 +172,7 @@
 /*  */
 .Insulation-textimage {
   color: #000;
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
@@ -188,7 +188,7 @@
 }
 .Insulation-image-otherspan {
   color: #c50568;
-  font-family: Mulish;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;

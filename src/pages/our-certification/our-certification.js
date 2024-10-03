@@ -20,7 +20,7 @@ const AboutUs = () => {
   return (
       <div className='container'>
         <div className='ourCertifications'>
-          <h2><img src={HeadingIcon} /><span>Our</span><span>Certification</span></h2>
+          <h2><img src={HeadingIcon} /><span>Our</span><span>Certifications</span></h2>
           <div className='certificates'>
             <div className='cert-box'>
               <img src={Pic1} />

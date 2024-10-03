@@ -23,7 +23,7 @@ const Cables = () => {
         {
             heading: "Low Tension Power Cables",
             subheadings: [
-                "Xlpe Insulated Power Cables as per IS 7098 (Copper/ Aluminum) (Armoured/ Unarmoured) 1.1Kv suitable",
+                "XLPE Insulated Power Cables as per IS 7098 (Copper/ Aluminum) (Armoured/ Unarmoured) 1.1Kv suitable",
                 "PVC Insulated Power Cables as per IS 1554 (Copper/ Aluminum) (Armoured/ Unarmoured) 1.1Kv suitable",
                 "Mining Cables as per Latest DGMS Standards (With Optional Double Armouring) 1.1Kv suitable",
                 "Fire Survival Cables 1.1Kv suitable"
@@ -32,7 +32,7 @@ const Cables = () => {
         {
             heading: "High Tension Power Cables",
             subheadings: [
-                "Xlpe Insulated Power Cables as per IS 7098 (Copper/ Aluminum) (Armoured/ Unarmoured) Upto 33 Kv",
+                "XLPE Insulated Power Cables as per IS 7098 (Copper/ Aluminum) (Armoured/ Unarmoured) Upto 33 Kv",
                 "PVC Insulated Power Cables as per IS 1554 (Copper/ Aluminum) (Armoured/ Unarmoured) Upto 33 Kv",
                 "Fire Survival Cables Upto 33 Kv"
             ]
@@ -40,7 +40,7 @@ const Cables = () => {
         {
             heading: "Control Cables",
             subheadings: [
-                "Xlpe Insulated Control Cables as per IS 7098 Copper (Armoured/ Unarmoured)",
+                "XLPE Insulated Control Cables as per IS 7098 Copper (Armoured/ Unarmoured)",
                 "PVC Insulated Control Cables as per IS 1554 Copper (Armoured/ Unarmoured)",
                 "Specialized Control Cables",
                 "Fire Retardant Low Smoke Control Cables",

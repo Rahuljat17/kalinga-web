@@ -70,7 +70,7 @@ export default function BasicTabs() {
             <Tab label="Kalinga Cables & Conduit Company" sx={{ color: 'black' }} {...a11yProps(0)} />
             <Tab label="Kalinga Cable Company" sx={{ color: 'black' }} {...a11yProps(1)} />
             <Tab label="Kalinga Hotels & Resorts" sx={{ color: 'black' }} {...a11yProps(2)} />
-            <Tab label="Sahni Strips Pvt Ltd" sx={{ color: 'black' }} {...a11yProps(3)} />
+            <Tab label="Sahni Strips Pvt. Ltd." sx={{ color: 'black' }} {...a11yProps(3)} />
           </Tabs>
         </Box>
 
@@ -82,7 +82,7 @@ export default function BasicTabs() {
               <img src={Networkimage1} />
             </div>
             <h3>Kalinga Cables & Conduit Company</h3>
-            <p>Kalinga Cables & Conduit Company manufactures PVC/XLPE insulated wires and cables up to 3.3 kV voltage grade for domestic, commercial, industrial, and transmission/distribution applications, as well as rigid PVC conduits for electrical installations. Their production capacity ranges from 0.5 sq.mm to 1000 sq.mm for wires and cables, and from 20 mm to 50 mm for electrical conduits.</p>
+            <p>Kalinga Cables & Conduit Company manufactures PVC/XLPE insulated wires and cables up to 33 kV voltage grade for domestic, commercial, industrial, and transmission/distribution applications, as well as rigid PVC conduits for electrical installations. Their production capacity ranges from 0.5 sq.mm to 1000 sq.mm for wires and cables, and from 20 mm to 50 mm for electrical conduits.</p>
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
@@ -112,7 +112,7 @@ export default function BasicTabs() {
                 <li>Hotel Kalinga Grand (Kanyal Road, Manali)</li>
                 <li>Royal Kalinga Cottages (Manali)</li>
                 <li>Kalinga Premium Villas (Manali)</li>
-                <li>Hotel Palm Grand (Naraina Vihar, New Delhi)"</li>
+                <li>Hotel Palm Grand (Naraina Vihar, New Delhi)</li>
               </ul>
             </p>
           </div>
@@ -124,8 +124,8 @@ export default function BasicTabs() {
               <img src={Networkimage11} />
               <img src={Networkimage12} />
             </div>
-            <h3>Sahni Strips Pvt Ltd</h3>
-            <p>Sahni Strips Pvt Ltd, under the brand Onwell®, is a leading manufacturer of high-quality cables, wires, and aluminum strips. Our product range is designed for various industrial, commercial, and residential applications, ensuring durability and efficiency. With a commitment to excellence, Onwell® delivers superior electrical and aluminum solutions that meet the highest industry standards for performance and safety.</p>
+            <h3>Sahni Strips Pvt. Ltd.</h3>
+            <p>Sahni Strips Pvt. Ltd., under the brand Onwell®, is a leading manufacturer of high-quality cables, wires, and aluminum strips. Our product range is designed for various industrial, commercial, and residential applications, ensuring durability and efficiency. With a commitment to excellence, Onwell® delivers superior electrical and aluminum solutions that meet the highest industry standards for performance and safety.</p>
           </div>
         </CustomTabPanel>
       </Box>

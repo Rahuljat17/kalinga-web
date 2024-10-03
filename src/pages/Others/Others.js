@@ -44,7 +44,7 @@ const Others = () => {
             <div>
                 <div className="background-container-others">
                     <div className="text-container-others">
-                        <h1 className="text-primary-others">Others</h1>
+                        <h1 className="text-primary-others">Other Products</h1>
                         <h2 className="text-secondary-others">From protecting your circuits with reliable MCBs to ensuring <br /> secure insulation with durable PVC tape, and monitoring <br />power usage with precision meters, our range of essential  <br />products guarantees safety, efficiency, and accuracy for all  <br />your electrical needs. </h2>
                     </div>
                 </div>

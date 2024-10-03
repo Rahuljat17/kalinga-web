@@ -187,7 +187,7 @@ const Home = () => {
             <div className='expertise-card'>
               <h2 className='expertise-title'>{licenses}</h2>
               <img src={pageslogo} className='expertise-logos' />
-              <h3 className='expertise-last-title'>BIS licenced obtained</h3>
+              <h3 className='expertise-last-title'>BIS licenses obtained</h3>
             </div>
             <div className='expertise-card'>
               <h2 className='expertise-title'><span>{number}</span> %</h2>
