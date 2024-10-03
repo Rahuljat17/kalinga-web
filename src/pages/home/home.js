@@ -37,9 +37,9 @@ const Home = () => {
     { id: 4, image: productfive, text: 'Lighting', redirect: '/lighting' },
     { id: 5, image: productone, text: 'Other Products', redirect: '/others' },
   ];
-  const [count, setCount] = useState(65);
-  const [Skilled, setSkilled] = useState(650);
-  const [licenses, setlicenses] = useState(8);
+  const [count, setCount] = useState(0);
+  const [Skilled, setSkilled] = useState(0);
+  const [licenses, setlicenses] = useState(0);
   const [number, setNumber] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false); // New flag to run the animation only once
   const sectionRef = useRef(null);
@@ -58,6 +58,48 @@ const Home = () => {
     incNbrRec();
   };
 
+  const increaseCountAnimation = (endNumber, speed = 40) => {
+    let currentNumber = 0;
+
+    const incNbrRec = () => {
+      if (currentNumber <= endNumber) {
+        setCount(currentNumber);
+        currentNumber++;
+        setTimeout(incNbrRec, speed);
+      }
+    };
+
+    incNbrRec();
+  };
+
+  const increaseSkilledAnimation = (endNumber, speed = 10) => {
+    let currentNumber = endNumber - 200;
+
+    const incNbrRec = () => {
+      if (currentNumber <= endNumber) {
+        setSkilled(currentNumber);
+        currentNumber++;
+        setTimeout(incNbrRec, speed);
+      }
+    };
+
+    incNbrRec();
+  };
+
+  const increaseLicencesAnimation = (endNumber, speed = 200) => {
+    let currentNumber = 0;
+
+    const incNbrRec = () => {
+      if (currentNumber <= endNumber) {
+        setlicenses(currentNumber);
+        currentNumber++;
+        setTimeout(incNbrRec, speed);
+      }
+    };
+
+    incNbrRec();
+  };
+
   useEffect(() => {
     const section = sectionRef.current;
     const observer = new IntersectionObserver(
@@ -65,6 +107,9 @@ const Home = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasAnimated) {
             increaseNumberAnimation(100);
+            increaseCountAnimation(65);
+            increaseSkilledAnimation(650);
+            increaseLicencesAnimation(8);
             setHasAnimated(true); // Ensure the animation runs only once
           }
         });
