@@ -133,7 +133,8 @@ const Home = () => {
       <Imageslider />
       {/* scroll */}
       <div>
-        <div className="marquee-container">
+        <h1 className='worked-title-mobile'>Worked with</h1>
+        <div className="marquee-container bbb">
           <div className="marquee-text-two">
             <h1 className='worked-title'>Worked with</h1>
           </div>
