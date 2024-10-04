@@ -43,16 +43,19 @@
     .container{
         padding: 50px 30px;
     }
+    .tabPanel{
+        width: 920px;
+    }
     .our-network{
         padding: 0 0px;
     }
-    .css-1anid1y{
+    /* .css-1anid1y{
         overflow-x: scroll !important;
     }
     .MuiTabs-fixed {
         overflow-x: scroll !important;
         padding-left: 200px;
-    }
+    } */
     .css-19kzrtu{
         padding: 24px 0px !important;
     }

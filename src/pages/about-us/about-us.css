@@ -156,8 +156,11 @@
         position: relative;
         margin-top: 50px;
     }
+    .timeline-event {
+        width: 110px;
+    }
     .timeline:before {
-        left: 17%; 
-        width: 66%;
+        left: 16%; 
+        width: 68%;
     }
 }

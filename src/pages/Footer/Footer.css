@@ -115,6 +115,9 @@ a{
   justify-content: space-evenly;
   gap: 10px;
 }
+.footer-links{
+  color: white;
+}
 @media (max-width: 768px) {
   .footer-main-logo {
     margin-top: 40px;

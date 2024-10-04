@@ -74,7 +74,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <Box textAlign="center" mt={0} py={2} sx={{ bgcolor: '#C50568', color: 'white' }}>
-                    <Typography variant="body2" style={{ fontWeight: "400", letterSpacing: "2px" }}>KALINGA PREMIUM @2024 || DESIGN AND DEVELOPED BY HYPERNXT</Typography>
+                    <Typography variant="body2" style={{ fontWeight: "400", letterSpacing: "2px" }}><a className="footer-links" href="https://www.kalingas.com/">KALINGA PREMIUM @2024</a> || <a className="footer-links" target="blank" href="https://www.thehypernxt.com/">DESIGN AND DEVELOPED BY <u>HYPERNXT</u></a></Typography>
                 </Box>
             </div>
         </>

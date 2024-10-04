@@ -58,8 +58,9 @@ export default function BasicTabs() {
   return (
     <div className='container'>
       <Box className="network-heading" sx={{ width: '100%' }}>
-        <Box sx={{ borderBottom: 0, borderColor: '#C50568' }}>
+        <Box sx={{ borderBottom: 0, borderColor: '#C50568', overflowX: 'auto' }}>
           <Tabs
+            className='tabPanel'
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
@@ -105,7 +106,7 @@ export default function BasicTabs() {
             </div>
             <h3>Kalinga Hotels & Resorts</h3>
             <p>Kalinga Hotels & Resorts offers a luxurious getaway in the serene landscapes of Manali, with a range of premium villas and cottages that blend modern comfort with natural beauty. Whether you're seeking a peaceful retreat or an adventurous mountain escape, our properties provide the perfect ambiance with elegant interiors, stunning views, and personalized services for a memorable stay.</p>
-            <p style={{textAlign: "left"}}>
+            <p style={{ textAlign: "left" }}>
               Our properties consist of:
               <ul>
                 <li>Hotel Kalinga Intercontinental (NH 21, Manali)</li>

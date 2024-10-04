@@ -7,6 +7,9 @@
 .logo{
     width: 130px;
 }
+.menuitem{
+    margin: 40px;
+}
 
 @media (max-width: 860px) {
     .logo{
@@ -15,6 +18,9 @@
     }
     .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
         margin: 0 !important;
+    }
+    .menuitem{
+        margin: 0px;
     }
     .css-11b4hzg-MuiToolbar-root{
         justify-content: space-between !important;

@@ -3,7 +3,7 @@ import './header.css'
 
 // react-roter-dom imports
 
-import { Link } from 'react-router-dom'; // or <a> if not using react-router-dom
+import { Link, useLocation } from 'react-router-dom';
 
 // mui imports
 
@@ -36,6 +36,7 @@ function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [anchorElProducts, setAnchorElProducts] = React.useState(null);
+  const location = useLocation();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -93,11 +94,17 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} style={{ margin: "40px" }}>
+                <MenuItem key={page} onClick={handleCloseNavMenu} className='menuitem'
+                style={{
+                  textDecoration: 'none',
+                  backgroundColor: location.pathname === (page === 'Home' ? '/' : `/${page.replace(/\s+/g, '-').toLowerCase()}`) ? '#C50568' : 'white',
+                }}>
                   <Typography sx={{ textAlign: 'center', textTransform: "none" }}>
                     <Link
                       to={page === 'Home' ? '/' : `/${page.replace(/\s+/g, '-').toLowerCase()}`}
-                      style={{ textDecoration: 'none', color: 'black' }}
+                      style={{
+                        color: location.pathname === (page === 'Home' ? '/' : `/${page.replace(/\s+/g, '-').toLowerCase()}`) ? '#fff' : 'black',
+                      }}
                     >
                       {page}
                     </Link>
@@ -115,20 +122,35 @@ function ResponsiveAppBar() {
                 {productOptions.map((option) => (
                   <MenuItem key={option} onClick={handleCloseProductsMenu}>
                     <Typography sx={{ textAlign: 'center' }}>
-                      <Link to={`/${option.replace(/\s+/g, '-').toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
+                      <Link to={`/${option.replace(/\s+/g, '-').toLowerCase()}`}>
                         {option}
                       </Link>
                     </Typography>
                   </MenuItem>
                 ))}
               </Menu>
+              <MenuItem onClick={handleCloseNavMenu} className='menuitem'
+              style={{
+                backgroundColor: location.pathname === ('/contact-us') ? '#C50568' : 'white',
+              }}>
+                <Typography sx={{ textAlign: 'center', textTransform: "none" }}>
+                  <Link
+                    to={'/contact-us'}
+                    style={{
+                      color: location.pathname === ('/contact-us') ? '#fff' : 'black',
+                    }}
+                  >
+                    Contact Us
+                  </Link>
+                </Typography>
+              </MenuItem>
             </Menu>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
               <Button
-              disableRipple
+                disableRipple
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'black', display: 'block', '&:hover': { backgroundColor: 'transparent', color: 'black' }, }}
@@ -157,9 +179,16 @@ function ResponsiveAppBar() {
               onClose={handleCloseProductsMenu}
             >
               {productOptions.map((option) => (
-                <MenuItem key={option} onClick={handleCloseProductsMenu}>
+                <MenuItem key={option} onClick={handleCloseProductsMenu}
+                style={{
+                  backgroundColor: location.pathname === `/${option.replace(/\s+/g, '-').toLowerCase()}` ? '#C50568' : 'white',
+                }}>
                   <Typography sx={{ textAlign: 'center' }}>
-                    <Link to={`/${option.replace(/\s+/g, '-').toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
+                    <Link to={`/${option.replace(/\s+/g, '-').toLowerCase()}`}
+                    style={{
+                      textDecoration: 'none',
+                      color: location.pathname === `/${option.replace(/\s+/g, '-').toLowerCase()}` ? 'white' : 'black',
+                    }}>
                       {option}
                     </Link>
                   </Typography>
